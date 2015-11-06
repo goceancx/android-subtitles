@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 101
-Active Line: 110
+Scroll Position: 166
+Active Line: 170
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -138,69 +138,67 @@ Dialogue: 0,0:05:51.03,0:05:55.50,ch,,0,0,0,,我们却不陌生.因为我们都�
 Dialogue: 0,0:05:55.50,0:05:56.16,ch,,0,0,0,,\N{\ren}before
 Dialogue: 0,0:05:56.16,0:05:59.21,ch,,0,0,0,,当然,这里的布局管理器更加灵活一点.它的特点是,\N{\ren}at a little bit more flexible than that\Nbut the idea here is that
 Dialogue: 0,0:05:59.21,0:06:02.47,ch,,0,0,0,,大体上,我们仍有着均分的网格布局列表项集合\N{\ren}we're still having this uniform\Ncollection of items
-Dialogue: 0,0:06:02.47,0:06:06.56,ch,,0,0,0,,但是这些列表项,除了一个挨着一个的布局之外,还能够\N{\ren}but these items can now be stacked up\Nuh you know, either side by side on
-Dialogue: 0,0:06:06.56,0:06:07.53,ch,,0,0,0,,\N{\ren}top of each other
-Dialogue: 0,0:06:07.53,0:06:11.91,ch,,0,0,0,,\N{\ren}uh, just like with linear layout manager\Ngrid layout manager does support
-Dialogue: 0,0:06:11.91,0:06:15.68,ch,,0,0,0,,\N{\ren}orientation changes so we can do a\Nvertical scrolling list
-Dialogue: 0,0:06:15.68,0:06:20.09,ch,,0,0,0,,\N{\ren}like the traditional grid view or we can\Nflip that into a horizontally scrolling
-Dialogue: 0,0:06:20.09,0:06:20.97,ch,,0,0,0,,\N{\ren}grid
-Dialogue: 0,0:06:20.97,0:06:25.05,ch,,0,0,0,,\N{\ren}instead now the the number that you see\Nin this
-Dialogue: 0,0:06:25.05,0:06:28.91,ch,,0,0,0,,\N{\ren}declaration here is that the the grid\Nlayout manager supports
-Dialogue: 0,0:06:28.91,0:06:33.22,ch,,0,0,0,,\N{\ren}controlling how many what they call\Nspans are associated with that
-Dialogue: 0,0:06:33.22,0:06:34.26,ch,,0,0,0,,\N{\ren}particular item
-Dialogue: 0,0:06:34.26,0:06:37.88,ch,,0,0,0,,\N{\ren}now the reason they call them spans\Ninstead of rows or columns is because
-Dialogue: 0,0:06:37.88,0:06:39.00,ch,,0,0,0,,\N{\ren}the fact that you can do it
-Dialogue: 0,0:06:39.00,0:06:42.41,ch,,0,0,0,,\N{\ren}either direction saucepan just simply\Ndefines
-Dialogue: 0,0:06:42.41,0:06:46.61,ch,,0,0,0,,\N{\ren}how many items you can stack up so in a\Nvertical grid the spans are the columns
-Dialogue: 0,0:06:46.61,0:06:49.03,ch,,0,0,0,,\N{\ren}in a horizontal grid the span to be the\NRose
-Dialogue: 0,0:06:49.03,0:06:53.05,ch,,0,0,0,,\N{\ren}K but they're still defined in such a\Nway that their uniform so
-Dialogue: 0,0:06:53.05,0:06:56.47,ch,,0,0,0,,\N{\ren}for instance in this case I have two\Nspans defined so
-Dialogue: 0,0:06:56.47,0:07:01.03,ch,,0,0,0,,\N{\ren}they will evenly be spaced on both sides\Nthere's not really a mechanism to define
-Dialogue: 0,0:07:01.03,0:07:04.24,ch,,0,0,0,,\N{\ren}you know sort of a 1/3 2/3 with the\Nspans
-Dialogue: 0,0:07:04.24,0:07:09.30,ch,,0,0,0,,\N{\ren}you're necessarily at this level paper\Nthey did at a
-Dialogue: 0,0:07:09.30,0:07:13.08,ch,,0,0,0,,\N{\ren}fairly interesting feature though that\Nallows you to change the uniformity
-Dialogue: 0,0:07:13.08,0:07:16.86,ch,,0,0,0,,\N{\ren}in in some basic ways using something\Ncalled a span size lookup
-Dialogue: 0,0:07:16.86,0:07:21.33,ch,,0,0,0,,\N{\ren}so in the example that I have here the\Ngrid layout manager still has
-Dialogue: 0,0:07:21.33,0:07:25.74,ch,,0,0,0,,\N{\ren}two spans defined but using this custom\Nimplementation have
-Dialogue: 0,0:07:25.74,0:07:29.49,ch,,0,0,0,,\N{\ren}a span size lookup we can define at\Nruntime for
-Dialogue: 0,0:07:29.49,0:07:32.86,ch,,0,0,0,,\N{\ren}each individual position how many spans
-Dialogue: 0,0:07:32.86,0:07:36.95,ch,,0,0,0,,\N{\ren}should each item take up and this is a\Nvery simple algorithm basically says
-Dialogue: 0,0:07:36.95,0:07:39.14,ch,,0,0,0,,\N{\ren}every third item should take two spans
-Dialogue: 0,0:07:39.14,0:07:42.30,ch,,0,0,0,,\N{\ren}and all the other should take just the\Ndefault 1
-Dialogue: 0,0:07:42.30,0:07:45.39,ch,,0,0,0,,\N{\ren}and this gives us the implementation\Nthat we see up here
-Dialogue: 0,0:07:45.39,0:07:48.58,ch,,0,0,0,,\N{\ren}where every other row is essentially\Nlaid out
-Dialogue: 0,0:07:48.58,0:07:51.93,ch,,0,0,0,,\N{\ren}all the way across but the grids\Ninterspersed in between
-Dialogue: 0,0:07:51.93,0:07:55.27,ch,,0,0,0,,\N{\ren}so you can create some shifting elements\Nhere
-Dialogue: 0,0:07:55.27,0:07:58.88,ch,,0,0,0,,\N{\ren}but this is always defined in terms of\Nthe number of spans available
-Dialogue: 0,0:07:58.88,0:08:03.70,ch,,0,0,0,,\N{\ren}so this isn't like a an explicit pics 0\Nwidth or anything like that you define
-Dialogue: 0,0:08:03.70,0:08:05.80,ch,,0,0,0,,\N{\ren}ahead a time how many spans are\Navailable
-Dialogue: 0,0:08:05.80,0:08:09.89,ch,,0,0,0,,\N{\ren}in this layout and then you can use the\Nlookup to basically tell it how many of
-Dialogue: 0,0:08:09.89,0:08:11.93,ch,,0,0,0,,\N{\ren}those you get the government sells in a\Ntable
-Dialogue: 0,0:08:11.93,0:08:16.44,ch,,0,0,0,,\N{\ren}this specific item should take up at I
-Dialogue: 0,0:08:16.44,0:08:20.01,ch,,0,0,0,,\N{\ren}it one of the important things to\Nrealize with grid layout though is that
+Dialogue: 0,0:06:02.47,0:06:06.56,ch,,0,0,0,,但是这些列表项,现在可以一个挨着一个填满一行后,\N{\ren}but these items can now be stacked up\Nuh you know, either side by side on
+Dialogue: 0,0:06:06.56,0:06:07.53,ch,,0,0,0,,再竖着往上填(- -!)\N{\ren}top of each other
+Dialogue: 0,0:06:07.53,0:06:11.91,ch,,0,0,0,,像LinearLayoutManager一样,GridLayoutManager也提供\N{\ren}uh, just like with linear layout manager\Ngrid layout manager does support
+Dialogue: 0,0:06:11.91,0:06:15.68,ch,,0,0,0,,方向参数,因此我们可以像之前一样,做个垂直的可滚动列表\N{\ren}orientation changes so we can do a\Nvertical scrolling list
+Dialogue: 0,0:06:15.68,0:06:20.97,ch,,0,0,0,,也可以做一个水平的可滚动网格列表\N{\ren}like the traditional grid view or we can\Nflip that into a horizontally scrolling grid
+Dialogue: 0,0:06:20.97,0:06:25.05,ch,,0,0,0,,这里位于参数列表中的数字代表着\N{\ren}instead now the the number that you see\Nin this
+Dialogue: 0,0:06:25.05,0:06:28.91,ch,,0,0,0,,GridLayoutManager所提供的一种控制参数\N{\ren}declaration here is that the the grid\Nlayout manager supports
+Dialogue: 0,0:06:28.91,0:06:33.22,ch,,0,0,0,,这个参数决定了每行item所能占用的最大span数\N{\ren}controlling how many what they call\Nspans are associated with that
+Dialogue: 0,0:06:33.22,0:06:34.26,ch,,0,0,0,,每个数据项都有着相关的span数\N{\ren}particular item
+Dialogue: 0,0:06:34.26,0:06:37.88,ch,,0,0,0,,这里把这个参数称作span而不是行或列的原因在于\N{\ren}now the reason they call them spans\Ninstead of rows or columns is because
+Dialogue: 0,0:06:37.88,0:06:39.00,ch,,0,0,0,,GridLayoutManager有着两种方向\N{\ren}the fact that you can do it
+Dialogue: 0,0:06:39.00,0:06:42.41,ch,,0,0,0,,简单的讲,span定义了\N{\ren}in either direction so a span just simply\Ndefines
+Dialogue: 0,0:06:42.41,0:06:46.61,ch,,0,0,0,,你能够在某一维度上堆栈起来的item数,纵表即为列数\N{\ren}how many items you can stack up so in a\Nvertical grid the spans are the columns
+Dialogue: 0,0:06:46.61,0:06:49.03,ch,,0,0,0,,横表即为行数\N{\ren}in a horizontal grid the span to be the\NRose
+Dialogue: 0,0:06:49.03,0:06:53.05,ch,,0,0,0,,除此之外,span还\N{\ren}OK but they're still defined in such a\Nway that they are uniform so
+Dialogue: 0,0:06:53.05,0:06:56.47,ch,,0,0,0,,仍旧体现其均匀的特性.举例来讲,在这我定义了2个span\N{\ren}for instance in this case I have two\Nspans defined so
+Dialogue: 0,0:06:56.47,0:07:01.03,ch,,0,0,0,,这里每行就被均分成了两部分来给列表项占用.仅用span\N{\ren}they will evenly be spaced on both sides\Nthere's not really a mechanism to define
+Dialogue: 0,0:07:01.03,0:07:04.24,ch,,0,0,0,,是无法将每行不均等分的(左边占1/3 右边占2/3).\N{\ren}you know sort of a 1/3 2/3 with the\Nspans
+Dialogue: 0,0:07:04.24,0:07:09.30,ch,,0,0,0,,你一定是在这个控制水准啦,懂么?但是别怕,有哥在呢.\N{\ren}you're necessarily at this level ok\Nthey did at a
+Dialogue: 0,0:07:09.30,0:07:13.08,ch,,0,0,0,,系统的确提供了一个相当有意思的特性,\N来让你对均等性进行改变\N{\ren}fairly interesting feature though that\Nallows you to change the uniformity
+Dialogue: 0,0:07:13.08,0:07:16.86,ch,,0,0,0,,这显然比传参数复杂一点,我们要用SpanSizeLook\N{\ren}in in some basic ways using something\Ncalled a span size lookup
+Dialogue: 0,0:07:16.86,0:07:21.33,ch,,0,0,0,,我这里的例子中,GridLayoutManager的span依然\N{\ren}so in the example that I have here the\Ngrid layout manager still has
+Dialogue: 0,0:07:21.33,0:07:25.74,ch,,0,0,0,,被设置为2,但是我们自定义了SpanSizeLookUp的实现\N{\ren}two spans defined but using this custom\Nimplementation of
+Dialogue: 0,0:07:25.74,0:07:29.49,ch,,0,0,0,,我们在运行时为\N{\ren}a span size lookup we can define at\Nruntime for
+Dialogue: 0,0:07:29.49,0:07:32.86,ch,,0,0,0,,每个位置来设置其占用span的个数\N{\ren}each individual position how many spans
+Dialogue: 0,0:07:32.86,0:07:36.95,ch,,0,0,0,,我这的方法挺简单\N{\ren}should each item take up and this is a\Nvery simple algorithm basically says
+Dialogue: 0,0:07:36.95,0:07:39.14,ch,,0,0,0,,每个3的倍数的列表项都会占用2个span\N{\ren}every third item should take two spans
+Dialogue: 0,0:07:39.14,0:07:42.30,ch,,0,0,0,,而其他的就还按默认的,只占用一个\N{\ren}and all the other should take just the\Ndefault 1
+Dialogue: 0,0:07:42.30,0:07:45.39,ch,,0,0,0,,这里,大家所看到的,就是这种实现的效果\N{\ren}and this gives us the implementation\Nthat we see up here
+Dialogue: 0,0:07:45.39,0:07:48.58,ch,,0,0,0,,这样网格就被整行分割了\N{\ren}where every other row is essentially\Nlaid out
+Dialogue: 0,0:07:48.58,0:07:51.93,ch,,0,0,0,,这样网格就被整行分割了\N{\ren}all the way across but the grids\Ninterspersed in between
+Dialogue: 0,0:07:51.93,0:07:55.27,ch,,0,0,0,,因此你可以在GridLayoutManager里创建一些变形的元素\N{\ren}so you can create some shifting elements\Nhere
+Dialogue: 0,0:07:55.27,0:07:58.88,ch,,0,0,0,,但是这必须被定义在可用的span数之上\N{\ren}but this is always defined in terms of\Nthe number of spans available
+Dialogue: 0,0:07:58.88,0:08:03.70,ch,,0,0,0,,因此,这不像明显的像素宽度或其他测量参数\N{\ren}so this isn't like a an explicit pixel\Nwidth or anything like that you define
+Dialogue: 0,0:08:03.70,0:08:05.80,ch,,0,0,0,,你必须提前定义好在你的布局中要用到的span数\N{\ren}ahead a time how many spans are\Navailable
+Dialogue: 0,0:08:05.80,0:08:09.89,ch,,0,0,0,,然后,你可以用LookUp来决定\N{\ren}in this layout and then you can use the\Nlookup to basically tell it how many of
+Dialogue: 0,0:08:09.89,0:08:11.93,ch,,0,0,0,,(在桌子上占用的单元数)\N{\ren}those you think of them as the cells in a\Ntable
+Dialogue: 0,0:08:11.93,0:08:16.44,ch,,0,0,0,,这个特定的item所应该占用的单元数\N{\ren}this specific item should take up at I
+Dialogue: 0,0:08:16.44,0:08:20.01,ch,,0,0,0,,关于GridLayoutManager还有件事你不能忘\N{\ren}it one of the important things to\Nrealize with grid layout though is that
 Dialogue: 0,0:08:20.01,0:08:20.49,ch,,0,0,0,,\N{\ren}the
-Dialogue: 0,0:08:20.49,0:08:23.52,ch,,0,0,0,,\N{\ren}whatever orientation it's in the item\Nheight:
-Dialogue: 0,0:08:23.52,0:08:27.93,ch,,0,0,0,,\N{\ren}or for towards on all the item with\Nstill needs to be uniform for
-Dialogue: 0,0:08:27.93,0:08:31.24,ch,,0,0,0,,\N{\ren}each element block so for instance in\Nthis example
-Dialogue: 0,0:08:31.24,0:08:34.70,ch,,0,0,0,,\N{\ren}all the items in the same row have to be\Nthe same height
-Dialogue: 0,0:08:34.70,0:08:37.77,ch,,0,0,0,,\N{\ren}and the the row height itself will
-Dialogue: 0,0:08:37.77,0:08:40.82,ch,,0,0,0,,\N{\ren}essentially adjust to whatever the\Ntallest item is
-Dialogue: 0,0:08:40.82,0:08:44.29,ch,,0,0,0,,\N{\ren}so if I had one item in the middle the\Nother two that was much taller
-Dialogue: 0,0:08:44.29,0:08:47.31,ch,,0,0,0,,\N{\ren}there would be a gap underneath the two\Nitems on either side
-Dialogue: 0,0:08:47.31,0:08:50.97,ch,,0,0,0,,\N{\ren}they don't slide up to sort of fill in\Nthe gaps or anything like that
-Dialogue: 0,0:08:50.97,0:08:52.54,ch,,0,0,0,,\N{\ren}for that
-Dialogue: 0,0:08:52.54,0:08:55.30,ch,,0,0,0,,\N{\ren}we have the staggered grid layout\Nmanager
-Dialogue: 0,0:08:55.30,0:08:59.58,ch,,0,0,0,,\N{\ren}so the staggered grid layout manager\Nbuild on that pattern
-Dialogue: 0,0:08:59.58,0:09:04.36,ch,,0,0,0,,\N{\ren}and operates and is constructed in a\Nvery similar way to grid layout manager
-Dialogue: 0,0:09:04.36,0:09:07.67,ch,,0,0,0,,\N{\ren}but in this case we have the opportunity\Nto define
-Dialogue: 0,0:09:07.67,0:09:11.50,ch,,0,0,0,,\N{\ren}different size item views and the\Nstaggered grid layout manager will
-Dialogue: 0,0:09:11.50,0:09:12.73,ch,,0,0,0,,\N{\ren}simply lay them out
-Dialogue: 0,0:09:12.73,0:09:17.12,ch,,0,0,0,,\N{\ren}as best it knows how underneath each\Nother filling in those individual gaps
-Dialogue: 0,0:09:17.12,0:09:20.13,ch,,0,0,0,,\N{\ren}K the firm in implementation perspective
-Dialogue: 0,0:09:20.13,0:09:24.87,ch,,0,0,0,,\N{\ren}creating one is again no different then\Nworking with the other two ended
-Dialogue: 0,0:09:24.87,0:09:28.06,ch,,0,0,0,,\N{\ren}also supports horizontal and vertical\Norientation
-Dialogue: 0,0:09:28.06,0:09:31.13,ch,,0,0,0,,\N{\ren}now
-Dialogue: 0,0:09:31.13,0:09:35.45,ch,,0,0,0,,\N{\ren}wanna the one other things to notice\Nabout each of these that I've shown you
+Dialogue: 0,0:08:20.49,0:08:23.52,ch,,0,0,0,,不论其使用何种的方向.其表项的高度\N{\ren}whatever orientation it's in,the item\Nheight:
+Dialogue: 0,0:08:23.52,0:08:27.93,ch,,0,0,0,,亦或其表项的宽度(水平方向),在每个表项\N{\ren}or for towards on all the item with\Nstill needs to be uniform for
+Dialogue: 0,0:08:27.93,0:08:31.24,ch,,0,0,0,,所占的块中必须是均等的.在我们这个例子中,\N{\ren}each element block so for instance in\Nthis example
+Dialogue: 0,0:08:31.24,0:08:34.70,ch,,0,0,0,,每一行中的item的高度必须是一样的\N{\ren}all the items in the same row have to be\Nthe same height
+Dialogue: 0,0:08:34.70,0:08:37.77,ch,,0,0,0,,行高取决于\N{\ren}and the the row height itself will
+Dialogue: 0,0:08:37.77,0:08:40.82,ch,,0,0,0,,最高的列表项的高度\N{\ren}essentially adjust to whatever the\Ntallest item is
+Dialogue: 0,0:08:40.82,0:08:44.29,ch,,0,0,0,,因此,如果我在一行中间的元素比两边的元素高\N{\ren}so if I had one item in the middle of the\Nother two that was much taller
+Dialogue: 0,0:08:44.29,0:08:47.31,ch,,0,0,0,,那么两边的元素下面就会有留白\N{\ren}there would be a gap underneath the two\Nitems on either side
+Dialogue: 0,0:08:47.31,0:08:50.97,ch,,0,0,0,,位于其下面的元素并不会滑上去填充空隙\N{\ren}they don't slide up to sort of fill in\Nthe gaps or anything like that
+Dialogue: 0,0:08:50.97,0:08:52.54,ch,,0,0,0,,而你恰好正是为了这种目的\N{\ren}for that
+Dialogue: 0,0:08:52.54,0:08:55.30,ch,,0,0,0,,别怕,我们还有StaggeredGridLayoutManager.\N{\ren}we have the staggered grid layout\Nmanager
+Dialogue: 0,0:08:55.30,0:08:59.58,ch,,0,0,0,,因此,SGLM正是构建在这种模式之上的\N{\ren}so the staggered grid layout manager\Nbuild on that pattern
+Dialogue: 0,0:08:59.58,0:09:04.36,ch,,0,0,0,,其被构造的方法和布局的操作都跟GLM相似\N{\ren}and operates and is constructed in a\Nvery similar way to grid layout manager
+Dialogue: 0,0:09:04.36,0:09:07.67,ch,,0,0,0,,不同的是,我们有机会去为表项视图定义\N{\ren}but in this case we have the opportunity\Nto define
+Dialogue: 0,0:09:07.67,0:09:12.73,ch,,0,0,0,,不同的大小.然后SGLM会把将其布局出来\N{\ren}different size item views and the\Nstaggered grid layout manager will simply lay them out
+Dialogue: 0,0:09:12.73,0:09:17.12,ch,,0,0,0,,并尽其所能的将留白用item填充起来.\N{\ren}as best it knows how underneath each\Nother filling in those individual gaps
+Dialogue: 0,0:09:17.12,0:09:20.13,ch,,0,0,0,,对我们的实现来讲\N{\ren}OK the from an implementation perspective
+Dialogue: 0,0:09:20.13,0:09:24.87,ch,,0,0,0,,创建这个布局管理器跟创建前面两个一样\N{\ren}creating one is again no different then\Nworking with the other two and it
+Dialogue: 0,0:09:24.87,0:09:28.06,ch,,0,0,0,,这种管理器也同样支持水平和垂直\N{\ren}also supports horizontal and vertical\Norientation
+Dialogue: 0,0:09:28.06,0:09:31.13,ch,,0,0,0,,前方依旧高能\N{\ren}now
+Dialogue: 0,0:09:31.13,0:09:35.45,ch,,0,0,0,,有件事要注意,我刚刚所展示给你们的每一种实现\N{\ren}one of the things to notice\Nabout each of these that I've shown you
 Dialogue: 0,0:09:35.45,0:09:40.55,ch,,0,0,0,,\N{\ren}so far is that well they support\Ndifferent orientations have scrolling
 Dialogue: 0,0:09:40.55,0:09:44.85,ch,,0,0,0,,\N{\ren}both these implementations only supports\Ngrowing in a single axis
 Dialogue: 0,0:09:44.85,0:09:48.48,ch,,0,0,0,,\N{\ren}at any given time what what I need to do
