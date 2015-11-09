@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 406
-Active Line: 422
+Scroll Position: 432
+Active Line: 447
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -451,25 +451,25 @@ Dialogue: 0,0:23:56.24,0:23:59.98,ch,,0,0,0,,fill这个方法不管是在初始�
 Dialogue: 0,0:23:59.98,0:24:03.93,ch,,0,0,0,,还是在用户滚动列表时,\N还是在RecyclerView有任何状态改变时\N{\ren}where they were scrolling whether any\Nstate changes on the recycler view which
 Dialogue: 0,0:24:03.93,0:24:06.26,ch,,0,0,0,,其都会被调用.而且每次被调用所走的都是同一个过程\N{\ren}is gonna go through this exact same\Nprocess
 Dialogue: 0,0:24:06.26,0:24:09.56,ch,,0,0,0,,(太佩服我自己了,居然把fill这个概念翻译完了 - -)\N{\ren}alright
-Dialogue: 0,0:24:09.56,0:24:12.44,ch,,0,0,0,,\N{\ren}questions you would ask yourself about\Nwhere my gaps
-Dialogue: 0,0:24:12.44,0:24:16.61,ch,,0,0,0,,\N{\ren}and the important thing to remember here\Nis to save his little state as possible
-Dialogue: 0,0:24:16.61,0:24:20.39,ch,,0,0,0,,\N{\ren}right you want to discover the\Ninformation about your view
-Dialogue: 0,0:24:20.39,0:24:24.36,ch,,0,0,0,,\N{\ren}what's the first visible position what\Nis it offset don't try to track
-Dialogue: 0,0:24:24.36,0:24:28.30,ch,,0,0,0,,\N{\ren}that information because that typically\Ntends to lead to edge cases where you
-Dialogue: 0,0:24:28.30,0:24:29.92,ch,,0,0,0,,\N{\ren}can track it correctly and then you
-Dialogue: 0,0:24:29.92,0:24:34.03,ch,,0,0,0,,\N{\ren}your branching a statement all over the\Nplace K use this as a
-Dialogue: 0,0:24:34.03,0:24:37.49,ch,,0,0,0,,\N{\ren}as stateless a function as you can\Npossibly do that discovers everything it
-Dialogue: 0,0:24:37.49,0:24:38.41,ch,,0,0,0,,\N{\ren}needs up front
-Dialogue: 0,0:24:38.41,0:24:41.71,ch,,0,0,0,,\N{\ren}and then runs the layout appropriately\Non each pass
-Dialogue: 0,0:24:41.71,0:24:45.48,ch,,0,0,0,,\N{\ren}okay
-Dialogue: 0,0:24:45.48,0:24:48.75,ch,,0,0,0,,\N{\ren}just by way of example this is what Phil
-Dialogue: 0,0:24:48.75,0:24:51.92,ch,,0,0,0,,\N{\ren}function might look like or are you\Nmight stop one out
-Dialogue: 0,0:24:51.92,0:24:56.05,ch,,0,0,0,,\N{\ren}so you at the beginning you're going to\Nhave some logic to determine what the
-Dialogue: 0,0:24:56.05,0:24:58.76,ch,,0,0,0,,\N{\ren}first visible position is depending on\Nyour layout that
-Dialogue: 0,0:24:58.76,0:25:02.65,ch,,0,0,0,,\N{\ren}your could mean a number of things it's\Nprobably just gonna be something simple
-Dialogue: 0,0:25:02.65,0:25:07.13,ch,,0,0,0,,\N{\ren}like enumerating overall the child abuse\Nasking those Child's View holders what
-Dialogue: 0,0:25:07.13,0:25:08.15,ch,,0,0,0,,\N{\ren}their position are
-Dialogue: 0,0:25:08.15,0:25:12.16,ch,,0,0,0,,\N{\ren}and may be looking for the lowest value\NK that would be true for a linear want
+Dialogue: 0,0:24:09.56,0:24:12.44,ch,,0,0,0,,你可能又会问,上哪儿找我的Gap呢\N{\ren}questions you would ask yourself about\Nwhere my gaps
+Dialogue: 0,0:24:12.44,0:24:16.61,ch,,0,0,0,,这里很重要的一点要记住,你要尽可能少的去保存状态值\N{\ren}and the important thing to remember here\Nis to save as little state as possible
+Dialogue: 0,0:24:16.61,0:24:20.39,ch,,0,0,0,,你要做的是把视图的信息给算出来\N{\ren}right you want to discover the\Ninformation about your view
+Dialogue: 0,0:24:20.39,0:24:24.36,ch,,0,0,0,,第一个可视视图的位置和其偏移量都要算才行.\N{\ren}what's the first visible position what\Nis it offset don't try to track
+Dialogue: 0,0:24:24.36,0:24:28.30,ch,,0,0,0,,不要想着设置状态值去追踪这些信息.\N因为这通常会由于\N{\ren}that information because that typically\Ntends to lead to edge cases where you
+Dialogue: 0,0:24:28.30,0:24:29.92,ch,,0,0,0,,你没有追踪到位都导致边界错误.\N{\ren}can track it correctly and then you
+Dialogue: 0,0:24:29.92,0:24:34.03,ch,,0,0,0,,你会把事情推向另一个分支发展.所以正确的做法是\N{\ren}you are branching a statement all over the\Nplace.ok use this as a
+Dialogue: 0,0:24:34.03,0:24:37.49,ch,,0,0,0,,尽可能把fill这个函数当成一个无状态函数,\N只借助内部状态找出\N{\ren}as stateless a function as you can\Npossibly do that discovers everything it
+Dialogue: 0,0:24:37.49,0:24:38.41,ch,,0,0,0,,来找出我们所需的布局初始信息\N{\ren}needs up front
+Dialogue: 0,0:24:38.41,0:24:41.71,ch,,0,0,0,,然后恰当的去运行布局过程.\N{\ren}and then runs the layout appropriately\Non each pass
+Dialogue: 0,0:24:44.78,0:24:45.48,ch,,0,0,0,,\N{\ren}okay
+Dialogue: 0,0:24:45.48,0:24:48.75,ch,,0,0,0,,顺便,我们这里举一个fill的例子\N{\ren}just by  way,an example,this is what a fill
+Dialogue: 0,0:24:48.75,0:24:51.92,ch,,0,0,0,,fill函数应该就长得像这样\N{\ren}function might look like or you\Nmight stop one out
+Dialogue: 0,0:24:51.92,0:24:56.05,ch,,0,0,0,,这里,首先,你需要想出一些逻辑来找出{\ren}so you know,at the beginning you're going to\Nhave some logic to determine what the
+Dialogue: 0,0:24:56.05,0:24:58.76,ch,,0,0,0,,第一个可视视图的位置,这个位置由于布局的不同\N{\ren}first visible position is depending on\Nyour layout that
+Dialogue: 0,0:24:58.76,0:25:02.65,ch,,0,0,0,,其位置的算法肯定也不相同.若是简单的算法,也许就像是\N{\ren}your could mean a number of things it's\Nprobably just gonna be something simple
+Dialogue: 0,0:25:02.65,0:25:07.13,ch,,0,0,0,,枚举所有的孩子视图,对其ViewHolder进行询问\N{\ren}like enumerating overall the child views\Nasking those Child's View holders what
+Dialogue: 0,0:25:07.13,0:25:08.15,ch,,0,0,0,,其所处的位置是多少\N{\ren}their position are
+Dialogue: 0,0:25:08.15,0:25:12.16,ch,,0,0,0,,然后找到最小值的ViewHolder,\N可能就是要找的第一个可视视图的位置了\N{\ren}and may be looking for the lowest value\NOK that would be true for a linear want
 Dialogue: 0,0:25:12.16,0:25:14.01,ch,,0,0,0,,\N{\ren}it may not be true depending on what\Nyour
 Dialogue: 0,0:25:14.01,0:25:17.51,ch,,0,0,0,,\N{\ren}your layout implementation s but\Nfiguring out what that first visible
 Dialogue: 0,0:25:17.51,0:25:18.59,ch,,0,0,0,,\N{\ren}item years
