@@ -1,3 +1,4 @@
 Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 *.sh
-
+.DS_Store
+.gitignore~
