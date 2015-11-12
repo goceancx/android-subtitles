@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 442
-Active Line: 458
+Scroll Position: 453
+Active Line: 459
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -487,8 +487,7 @@ Dialogue: 0,0:25:55.52,0:25:59.29,ch,,0,0,0,,这个方法不用你来做实现,�
 Dialogue: 0,0:25:59.29,0:26:02.68,ch,,0,0,0,,这意思是说,把当前attached的视图全都丢给\N{\ren}that says tossed every view that I has\Ncurrently attached to me
 Dialogue: 0,0:26:02.68,0:26:06.90,ch,,0,0,0,,Scrap堆.之后,\N{\ren}throw into crap.OK,and then from there
 Dialogue: 0,0:26:06.90,0:26:10.74,ch,,0,0,0,,你可以\N{\ren}you can simply iterate through however\Nmany views you need whether you have
-Dialogue: 0,0:26:10.74,0:26:13.81,ch,,0,0,0,,\N{\ren}like a fixed window size are you just\Nwant to iterate through views and tell
-Dialogue: 0,0:26:13.81,0:26:14.21,ch,,0,0,0,,\N{\ren}you
+Dialogue: 0,0:26:10.74,0:26:14.21,ch,,0,0,0,,\N{\ren}like a fixed window size are you just\Nwant to iterate through views and tell you
 Dialogue: 0,0:26:14.21,0:26:17.49,ch,,0,0,0,,\N{\ren}run outta space whatever algorithm you\Nwant to use to do this
 Dialogue: 0,0:26:17.49,0:26:21.01,ch,,0,0,0,,\N{\ren}iterate through those views and get each\None back
 Dialogue: 0,0:26:21.01,0:26:22.66,ch,,0,0,0,,\N{\ren}from the recycler so get your
