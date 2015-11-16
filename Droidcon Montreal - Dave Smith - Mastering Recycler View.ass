@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 461
-Active Line: 476
+Scroll Position: 502
+Active Line: 517
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -486,11 +486,11 @@ Dialogue: 0,0:25:50.87,0:25:55.52,ch,,0,0,0,,recycler被传进入了API中的一
 Dialogue: 0,0:25:55.52,0:25:59.29,ch,,0,0,0,,这个方法不用你来做实现,你只要告诉framework,\NdetachAndScrapAttachedViews就行了\N{\ren}that's not something you have to write\Njust detach and scrap attached views
 Dialogue: 0,0:25:59.29,0:26:02.68,ch,,0,0,0,,这意思是说,把当前attached的视图全都\N{\ren}that says tossed every view that I has\Ncurrently attached to me
 Dialogue: 0,0:26:02.68,0:26:06.90,ch,,0,0,0,,丢给Scrap堆.之后,\N{\ren}throw into scrap.OK,and then from there
-Dialogue: 0,0:26:06.90,0:26:10.74,ch,,0,0,0,,你可以简单的遍历出你所需要的视图,\N{\ren}you can simply iterate through however\Nmany views you need whether you have 
+Dialogue: 0,0:26:06.90,0:26:10.74,ch,,0,0,0,,你可以简单的遍历出你所需要的视图,\N{\ren}you can simply iterate through however\Nmany views you need whether you have
 Dialogue: 0,0:26:10.74,0:26:14.21,ch,,0,0,0,,不管你是要把这些视图布局到一个固定大小的窗口里,\N还是你要用视图把整个界面的空间都布局满\N{\ren}like a fixed window size or you just\Nwant to iterate through views until you
 Dialogue: 0,0:26:14.21,0:26:17.49,ch,,0,0,0,,或者将这些视图应用到任何你想出来的布局算法中\N{\ren}run out of space whatever algorithm that you\Nwant to use to do this
-Dialogue: 0,0:26:17.49,0:26:21.01,ch,,0,0,0,,你都得把这些需要的视图给遍历出来.你要在\N{\ren}iterate through those views and get each one back 
-Dialogue: 0,0:26:21.01,0:26:22.66,ch,,0,0,0,,recycler中把每个视图给查找出来.\N{\ren}from the recycler so 
+Dialogue: 0,0:26:17.49,0:26:21.01,ch,,0,0,0,,你都得把这些需要的视图给遍历出来.你要在\N{\ren}iterate through those views and get each one back
+Dialogue: 0,0:26:21.01,0:26:22.66,ch,,0,0,0,,recycler中把每个视图给查找出来.\N{\ren}from the recycler so
 Dialogue: 0,0:26:22.66,0:26:26.53,ch,,0,0,0,,getViewForPosition这个方法会告诉recycler,\N我想在这个位置上进行布局\N{\ren}getViewForPosition will tell the recycler this is\Nthe position I wanna lay out
 Dialogue: 0,0:26:26.53,0:26:30.16,ch,,0,0,0,,接着recycler会返回给你所需要的视图,\N并且已经给你绑定好了数据\N{\ren}and it will give you the view already\Nbound to the data that you need to do
 Dialogue: 0,0:26:30.16,0:26:30.98,ch,,0,0,0,,这些数据会在你布局的时候被用到\N{\ren}that layout with
@@ -499,58 +499,53 @@ Dialogue: 0,0:26:34.94,0:26:38.27,ch,,0,0,0,,或者说是attach到父视图上,�
 Dialogue: 0,0:26:38.27,0:26:43.88,ch,,0,0,0,,这之后\N{\ren}oK then from there
 Dialogue: 0,0:26:43.88,0:26:48.11,ch,,0,0,0,,最后一步是看看有没有剩下的视图\N{\ren}the final job is determining if there\Nare any views that were in my layout
 Dialogue: 0,0:26:48.11,0:26:52.12,ch,,0,0,0,,这些在布局中没有被用到.之前,我们开始的时候,\N我们是把当前所有的视图都丢给ScrapHeap\N{\ren}that I don't need anymore so when I went\Nthrough and I scrapped everything
-Dialogue: 0,0:26:52.12,0:26:55.75,ch,,0,0,0,,\N{\ren}if if the next step is to lay out just\Nwhat I need
-Dialogue: 0,0:26:55.75,0:26:58.95,ch,,0,0,0,,\N{\ren}there may be views that were left in the\Nscrap heap
-Dialogue: 0,0:26:58.95,0:27:02.48,ch,,0,0,0,,\N{\ren}and those are views that I scrolled off\Nscreen or for whatever reason I don't
-Dialogue: 0,0:27:02.48,0:27:03.32,ch,,0,0,0,,\N{\ren}need anymore
-Dialogue: 0,0:27:03.32,0:27:07.50,ch,,0,0,0,,\N{\ren}because they didn't make it back into\Nthe layout pass you can ask the recycler
-Dialogue: 0,0:27:07.50,0:27:10.23,ch,,0,0,0,,\N{\ren}view for its current list of what's in\Nscrap
-Dialogue: 0,0:27:10.23,0:27:14.19,ch,,0,0,0,,\N{\ren}and if there is anything left in scrap\Nat this stage I don't need it
-Dialogue: 0,0:27:14.19,0:27:18.58,ch,,0,0,0,,\N{\ren}so I can recycle it pack so then this\Nwill just go through in
-Dialogue: 0,0:27:18.58,0:27:22.49,ch,,0,0,0,,\N{\ren}and take the views out at the scrap heap\Nand explicitly put them in their cycle
-Dialogue: 0,0:27:22.49,0:27:22.89,ch,,0,0,0,,\N{\ren}poor
-Dialogue: 0,0:27:22.89,0:27:26.36,ch,,0,0,0,,\N{\ren}okay and that's a more efficient way of\Nholding those views when you know
-Dialogue: 0,0:27:26.36,0:27:30.21,ch,,0,0,0,,\N{\ren}that they're gonna need to be rebound\Ntoday to later on that doesn't mean that
-Dialogue: 0,0:27:30.21,0:27:33.91,ch,,0,0,0,,\N{\ren}if you run outta views and recycle\Nannually views that are available are in
-Dialogue: 0,0:27:33.91,0:27:34.77,ch,,0,0,0,,\N{\ren}scrap that
-Dialogue: 0,0:27:34.77,0:27:39.60,ch,,0,0,0,,\N{\ren}it won't be able to rebind them recycle\NRehbein data from scrap or recycle so it
-Dialogue: 0,0:27:39.60,0:27:42.98,ch,,0,0,0,,\N{\ren}it's not something you necessarily have\Nto worry about as to whether it will
-Dialogue: 0,0:27:42.98,0:27:43.67,ch,,0,0,0,,\N{\ren}make your
-Dialogue: 0,0:27:43.67,0:27:46.97,ch,,0,0,0,,\N{\ren}you work correctly it's just an\Noptimization
-Dialogue: 0,0:27:46.97,0:27:50.50,ch,,0,0,0,,\N{\ren}if you use crap in recycle appropriately\Nthen you have the most optimized for
-Dialogue: 0,0:27:50.50,0:27:51.66,ch,,0,0,0,,\N{\ren}cycling behavior
-Dialogue: 0,0:27:51.66,0:27:56.46,ch,,0,0,0,,\N{\ren}in terms of memory management that sort\Nof thing okay
-Dialogue: 0,0:27:56.46,0:28:00.33,ch,,0,0,0,,\N{\ren}so what are the advantages from the\Nexample that I
-Dialogue: 0,0:28:00.33,0:28:04.51,ch,,0,0,0,,\N{\ren}had put forth I've doing S II has to do\Nwith viewing the Seas
-Dialogue: 0,0:28:04.51,0:28:08.02,ch,,0,0,0,,\N{\ren}my mother for her problems that I doubt\Nwhether when dealing with this is the
-Dialogue: 0,0:28:08.02,0:28:09.75,ch,,0,0,0,,\N{\ren}sixth grade implementation
-Dialogue: 0,0:28:09.75,0:28:14.22,ch,,0,0,0,,\N{\ren}was unlike a traditional linear single\Nscrolling
-Dialogue: 0,0:28:14.22,0:28:18.23,ch,,0,0,0,,\N{\ren}implementation the view indices aren't\Nalways consistent
-Dialogue: 0,0:28:18.23,0:28:21.65,ch,,0,0,0,,\N{\ren}you know something like a LinearLayout\Nor even a grid layout you can typically
-Dialogue: 0,0:28:21.65,0:28:23.05,ch,,0,0,0,,\N{\ren}rely on the fact that
-Dialogue: 0,0:28:23.05,0:28:26.10,ch,,0,0,0,,\N{\ren}the first views in the list are the\Nfirst visible
-Dialogue: 0,0:28:26.10,0:28:29.49,ch,,0,0,0,,\N{\ren}and the last views in less than the last\Nvisible and you can rely on a
-Dialogue: 0,0:28:29.49,0:28:33.63,ch,,0,0,0,,\N{\ren}a fairly consistent mapping between view\Nindices
-Dialogue: 0,0:28:33.63,0:28:36.08,ch,,0,0,0,,\N{\ren}and positions you know when you scroll\Nup you would
-Dialogue: 0,0:28:36.08,0:28:40.25,ch,,0,0,0,,\N{\ren}typically insert pews at the front and\Nif as you scroll down you would
-Dialogue: 0,0:28:40.25,0:28:44.52,ch,,0,0,0,,\N{\ren}appended to the ender vice versa but\Nthat's not necessarily true with this
-Dialogue: 0,0:28:44.52,0:28:46.17,ch,,0,0,0,,\N{\ren}case you know in this case if the
-Dialogue: 0,0:28:46.17,0:28:50.22,ch,,0,0,0,,\N{\ren}if the user is looking at some block up\Nelement in the middle of the grid
-Dialogue: 0,0:28:50.22,0:28:53.51,ch,,0,0,0,,\N{\ren}the view indices might look something\Nlike this: based on the way I played
-Dialogue: 0,0:28:53.51,0:28:54.07,ch,,0,0,0,,\N{\ren}them out
-Dialogue: 0,0:28:54.07,0:28:57.82,ch,,0,0,0,,\N{\ren}but you can kinda see that on the left\Nand the right hand side there
-Dialogue: 0,0:28:57.82,0:29:01.00,ch,,0,0,0,,\N{\ren}those views our part love the range
-Dialogue: 0,0:29:01.00,0:29:04.83,ch,,0,0,0,,\N{\ren}from the adapters perspective they just\Naren't visible right now
-Dialogue: 0,0:29:04.83,0:29:08.78,ch,,0,0,0,,\N{\ren}so you can imagine that as a shift the\Nwindow across these views
-Dialogue: 0,0:29:08.78,0:29:12.51,ch,,0,0,0,,\N{\ren}they will be Barack brought in as group\Nso I would bring in maybe
-Dialogue: 0,0:29:12.51,0:29:16.36,ch,,0,0,0,,\N{\ren}for call r4 views in the next column\Nmaybe a couple for the New Ro
-Dialogue: 0,0:29:16.36,0:29:20.23,ch,,0,0,0,,\N{\ren}and accompanied in groups that could be\Ncoming from all four sides
-Dialogue: 0,0:29:20.23,0:29:23.79,ch,,0,0,0,,\N{\ren}so if I want to rely on any sort
-Dialogue: 0,0:29:23.79,0:29:28.73,ch,,0,0,0,,\N{\ren}love consistency in the view indices I\Nneed to toss everything away and relay
-Dialogue: 0,0:29:28.73,0:29:33.00,ch,,0,0,0,,\N{\ren}out and that insures that child 0 is\Nalways at the top left
-Dialogue: 0,0:29:33.00,0:29:36.14,ch,,0,0,0,,\N{\ren}child whatever is at the bottom right\Npay
-Dialogue: 0,0:29:36.14,0:29:39.38,ch,,0,0,0,,\N{\ren}otherwise I can and I'm not saying you\Nhave to rely on that but
-Dialogue: 0,0:29:39.38,0:29:43.26,ch,,0,0,0,,\N{\ren}a little trick to help keep your sanity\Nhere is if you can be relatively sure
+Dialogue: 0,0:26:52.12,0:26:55.75,ch,,0,0,0,,如果在接下来的layout过程中,\N仅仅使用到了我们所需的视图\N{\ren}if if the next step is to lay out just what I need
+Dialogue: 0,0:26:55.75,0:26:58.95,ch,,0,0,0,,那么在Scrap中就有可能还剩下没被操作的视图\N{\ren}there may be views that were left in the scrap heap
+Dialogue: 0,0:26:58.95,0:27:02.48,ch,,0,0,0,,这些视图就可能是滚出屏幕的视图,\N也可能是由于某种原因\N{\ren}and those are views that I scrolled off screen or for whatever reason I don't
+Dialogue: 0,0:27:02.48,0:27:03.32,ch,,0,0,0,,我不在需要的视图\N{\ren}need anymore
+Dialogue: 0,0:27:03.32,0:27:07.50,ch,,0,0,0,,因为这些视图没有经过layout的过程\N(因此就不会再出现在屏幕之上了)\N{\ren}because they didn't make it back into the layout pass.you can ask the recycler
+Dialogue: 0,0:27:07.50,0:27:10.23,ch,,0,0,0,,此时你可以对recycler中的视图状态进行检查\N{\ren}view for its current list of what's in scrap
+Dialogue: 0,0:27:10.23,0:27:14.19,ch,,0,0,0,,此时如果还有视图存在与Scrap中的话,我们是不需要的了\N{\ren}and if there is anything left in scrap at this stage I don't need it
+Dialogue: 0,0:27:14.19,0:27:18.58,ch,,0,0,0,,那对于这些视图,我就可以把它们给回收了.\N回收的过程就是\N{\ren}so I can recycle it.ok,so then this will just go through in
+Dialogue: 0,0:27:18.58,0:27:22.89,ch,,0,0,0,,把视图从ScrapHeap中拿出来,\N然后显式的将其它们丢给RecyclerPool\N{\ren}and take the views out at the scrap heap and explicitly put them in their cycle poor
+Dialogue: 0,0:27:22.89,0:27:26.36,ch,,0,0,0,,这是一种更有效的回收视图的方式,来把你明确知道的\N{\ren}okay and that's a more efficient way of holding those views when you know
+Dialogue: 0,0:27:26.36,0:27:30.21,ch,,0,0,0,,之后还会再绑定数据的视图进行回收.这并不意味着\N{\ren}that they're gonna need to be rebound to data later on,that doesn't mean that
+Dialogue: 0,0:27:30.21,0:27:34.77,ch,,0,0,0,,你把这些剩下的存在于Scrap的视图给回收后,\N{\ren}if you run out of views and recycle\Nand the only views that are available are in scrap that
+Dialogue: 0,0:27:34.77,0:27:39.60,ch,,0,0,0,,这些视图就不能进行数据绑定了.recycler不光从Scrap中,\N也会从RecyclerPool中取出视图进行绑定.\N{\ren}it won't be able to rebind them.recycle will rebind data from scrap or recycle so it
+Dialogue: 0,0:27:39.60,0:27:42.98,ch,,0,0,0,,你不必担心到底能不能\N{\ren}it's not something you necessarily have to worry about as to whether it will
+Dialogue: 0,0:27:42.98,0:27:46.97,ch,,0,0,0,,让你的视图工作起来.这仅仅是一种优化操作\N{\ren}make your view work correctly.it's just an optimization
+Dialogue: 0,0:27:46.97,0:27:51.66,ch,,0,0,0,,如果在recycler中正确的使用Scrap,\N你就能对回收行为做最大的优化\N{\ren}if you use scrap in recycle appropriately\Nthen you'll have the most optimized for recycling behavior
+Dialogue: 0,0:27:51.66,0:27:53.86,ch,,0,0,0,,比方说内存管理或其他等等相关的.\N{\ren}in terms of memory management that sort of thing.okay
+Dialogue: 0,0:27:53.86,0:27:56.44,ch,,0,0,0,,layout的过程讲完了.\N{\ren}okay
+Dialogue: 0,0:27:56.46,0:28:00.33,ch,,0,0,0,,那么framework让我们这么干的好处在哪呢\N其好处之一就是,在实现我的例子\N{\ren}so one of the advantages from the example that I
+Dialogue: 0,0:28:00.33,0:28:04.51,ch,,0,0,0,,之前,我必须要对视图的索引进行处理\N{\ren}had put forth of doing this has to do with view indices
+Dialogue: 0,0:28:04.51,0:28:09.75,ch,,0,0,0,,要实现这种布局,我第一个要考虑的问题就是\N{\ren}one of the first problem i doubt with when dealing with this,this fixed grid implementation
+Dialogue: 0,0:28:09.75,0:28:14.22,ch,,0,0,0,,这不像是一个通常的线性单向滚动的\N{\ren}was unlike a traditional linear single scrolling
+Dialogue: 0,0:28:14.22,0:28:18.23,ch,,0,0,0,,实现,这里在滚动时,视图的索引不是连续的\N{\ren}implementation the view indices aren't always consistent
+Dialogue: 0,0:28:18.23,0:28:21.65,ch,,0,0,0,,在LinearLayout甚至GridLayout中,你都可以简单的\N{\ren}you know something like a LinearLayout or even a grid layout you can typically
+Dialogue: 0,0:28:21.65,0:28:23.05,ch,,0,0,0,,依赖这样一个事实\N{\ren}rely on the fact that
+Dialogue: 0,0:28:23.05,0:28:26.10,ch,,0,0,0,,列表中的第一个视图,就是第一个可见的视图\N{\ren}the first views in the list are the first visible
+Dialogue: 0,0:28:26.10,0:28:29.49,ch,,0,0,0,,最后一个视图,就是最后一个可见的视图.你可以依赖于\N{\ren}and the last views in list is the last visible.and you can rely on a
+Dialogue: 0,0:28:29.49,0:28:33.63,ch,,0,0,0,,视图的index和position以一种相对连续的方式进行映射\N{\ren}a fairly consistent mapping between view indices
+Dialogue: 0,0:28:33.63,0:28:36.08,ch,,0,0,0,,当列表往上滚的时候,\N{\ren}and positions you know when you scroll up you would
+Dialogue: 0,0:28:36.08,0:28:40.25,ch,,0,0,0,,你通常在列表前面插入视图,如果列表下滚\N{\ren}typically insert views at the front and\Nif as you scroll down you would
+Dialogue: 0,0:28:40.25,0:28:44.52,ch,,0,0,0,,通常就在尾部进行添加.但是对于\N{\ren}append them to the end or vice versa but\Nthat's not necessarily true with this
+Dialogue: 0,0:28:44.52,0:28:46.17,ch,,0,0,0,,我们的例子来说这样做就不对了.\N{\ren}case you know in this case if the
+Dialogue: 0,0:28:46.17,0:28:50.22,ch,,0,0,0,,如果用户正在查看网格中间的某些块元素\N{\ren}if the user is looking at some block of elements in the middle of the grid
+Dialogue: 0,0:28:50.22,0:28:54.07,ch,,0,0,0,,视图的索引就可能看起来像这种样子,按照我布局的方式\N{\ren}the view indices might look something like this: based on the way I've laid them out
+Dialogue: 0,0:28:54.07,0:28:57.82,ch,,0,0,0,,但是你可以看出来,如果你把左边和右边的\N{\ren}but you can kinda see that on the left and the right hand side there
+Dialogue: 0,0:28:57.82,0:29:01.00,ch,,0,0,0,,视图索引当成适配器的位置来看时\N{\ren}those views are part of the range
+Dialogue: 0,0:29:01.00,0:29:04.83,ch,,0,0,0,,从适配器的角度来看,它们就是不可见的\N{\ren}from the adapters perspective they just aren't visible right now
+Dialogue: 0,0:29:04.83,0:29:08.78,ch,,0,0,0,,你可以想象的到,当我把这个窗口在视图上做各种平移时\N{\ren}so you can imagine that as i shift the window across these views
+Dialogue: 0,0:29:08.78,0:29:12.51,ch,,0,0,0,,视图们就会以组的形式给添加进来.我可能\N{\ren}they will be brought in as groups\Nso I would bring in maybe
+Dialogue: 0,0:29:12.51,0:29:16.36,ch,,0,0,0,,会添加4个视图来布局出下一列,\N或者添加几个视图来布局下一行\N{\ren}for call 4 views in the next column\Nmaybe a couple for the new row
+Dialogue: 0,0:29:16.36,0:29:20.23,ch,,0,0,0,,这些视图以组的形式可能从各个方向上\N(上,下,左,右)被添加进来\N{\ren}and it will come in groups that could be coming from all four sides
+Dialogue: 0,0:29:20.23,0:29:23.79,ch,,0,0,0,,因此如果我要依赖任何\N{\ren}so if I want to rely on any sort
+Dialogue: 0,0:29:23.79,0:29:28.73,ch,,0,0,0,,视图索引的连续性的话,我需要先把所有视图都丢掉,然后\N{\ren}of consistency in the view indices I need to toss everything away and
+Dialogue: 0,0:29:28.73,0:29:33.00,ch,,0,0,0,,然后对其进行重新布局,来确保索引0的孩子总在左上方\N{\ren}relayout and that insures that child 0 is always at the top left
+Dialogue: 0,0:29:33.00,0:29:36.14,ch,,0,0,0,,索引X的孩子总在右下方\N{\ren}child whatever is at the bottom right.ok
+Dialogue: 0,0:29:36.14,0:29:39.38,ch,,0,0,0,,否则你就不能依赖索引连续性.\N我并不是说你非得这么干.\N{\ren}otherwise I can't and I'm not saying you\Nhave to rely on that but
+Dialogue: 0,0:29:39.38,0:29:43.26,ch,,0,0,0,,\N{\ren}but a little trick to help keep your sanity\Nhere is if you can be relatively sure
 Dialogue: 0,0:29:43.26,0:29:45.01,ch,,0,0,0,,\N{\ren}that the child indices are in the right
 Dialogue: 0,0:29:45.01,0:29:50.21,ch,,0,0,0,,\N{\ren}order all the time then it it to help\Nsimplify some of that inspection logic
 Dialogue: 0,0:29:50.21,0:29:52.87,ch,,0,0,0,,\N{\ren}that you may need to do later on for\Nchanges and stuff like that
