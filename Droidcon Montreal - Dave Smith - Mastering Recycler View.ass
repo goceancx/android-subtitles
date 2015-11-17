@@ -13,13 +13,13 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 502
-Active Line: 517
+Scroll Position: 543
+Active Line: 556
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: en,Monaco,48,&H00FFFFFF,&H00FFFFFF,&H000405FF,&H00101012,-1,0,0,0,100,100,0,0,1,1.5,0,2,15,15,15,1
-Style: ch,Heiti SC,75,&H00FFFFFF,&H00FBFBFF,&H00AD9000,&H00000000,0,0,0,0,100,100,0,0,1,1.5,0.45,2,15,15,15,1
+Style: ch,Heiti SC,70,&H00FFFFFF,&H00FBFBFF,&H00AD9000,&H00000000,0,0,0,0,100,100,0,0,1,1.5,0.45,2,15,15,15,1
 Style: Default,Arial,30,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,3,3,2,15,15,15,1
 Style: 城之内,Weibei SC,48,&H00FFFFFF,&H00FEFEFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1.2,0.45,2,15,15,15,134
 Style: 游戏,Hiragino Sans GB,48,&H00FFFFFF,&H00FEFEFF,&H00FF0000,&H00000000,0,0,0,0,100,100,0,0,1,1.05,0.3,2,15,15,18,1
@@ -545,58 +545,49 @@ Dialogue: 0,0:29:23.79,0:29:28.73,ch,,0,0,0,,视图索引的连续性的话,我�
 Dialogue: 0,0:29:28.73,0:29:33.00,ch,,0,0,0,,然后对其进行重新布局,来确保索引0的孩子总在左上方\N{\ren}relayout and that insures that child 0 is always at the top left
 Dialogue: 0,0:29:33.00,0:29:36.14,ch,,0,0,0,,索引X的孩子总在右下方\N{\ren}child whatever is at the bottom right.ok
 Dialogue: 0,0:29:36.14,0:29:39.38,ch,,0,0,0,,否则你就不能依赖索引连续性.\N我并不是说你非得这么干.\N{\ren}otherwise I can't and I'm not saying you\Nhave to rely on that but
-Dialogue: 0,0:29:39.38,0:29:43.26,ch,,0,0,0,,\N{\ren}but a little trick to help keep your sanity\Nhere is if you can be relatively sure
-Dialogue: 0,0:29:43.26,0:29:45.01,ch,,0,0,0,,\N{\ren}that the child indices are in the right
-Dialogue: 0,0:29:45.01,0:29:50.21,ch,,0,0,0,,\N{\ren}order all the time then it it to help\Nsimplify some of that inspection logic
-Dialogue: 0,0:29:50.21,0:29:52.87,ch,,0,0,0,,\N{\ren}that you may need to do later on for\Nchanges and stuff like that
-Dialogue: 0,0:29:52.87,0:29:56.27,ch,,0,0,0,,\N{\ren}that's just an advantage abusing that\Nimplementation
-Dialogue: 0,0:29:56.27,0:30:00.85,ch,,0,0,0,,\N{\ren}and this depending on your functionality\Nand how you mutate that still method I
-Dialogue: 0,0:30:00.85,0:30:01.52,ch,,0,0,0,,\N{\ren}showed you
-Dialogue: 0,0:30:01.52,0:30:04.90,ch,,0,0,0,,\N{\ren}you can use attach and detach manually
-Dialogue: 0,0:30:04.90,0:30:09.53,ch,,0,0,0,,\N{\ren}to reorder these views so you know if\Nyou're not necessarily scrapping them
-Dialogue: 0,0:30:09.53,0:30:13.51,ch,,0,0,0,,\N{\ren}but for whatever reason you just want to\Nreorder them so that the same views have
-Dialogue: 0,0:30:13.51,0:30:15.28,ch,,0,0,0,,\N{\ren}different indices that are in this order
-Dialogue: 0,0:30:15.28,0:30:18.49,ch,,0,0,0,,\N{\ren}detach the mall and reattach them in the\Nright order that will
-Dialogue: 0,0:30:18.49,0:30:23.11,ch,,0,0,0,,\N{\ren}that will give them the proper view\Nindex from a child perspective insider
-Dialogue: 0,0:30:23.11,0:30:24.26,ch,,0,0,0,,\N{\ren}the parent parent view
-Dialogue: 0,0:30:24.26,0:30:30.05,ch,,0,0,0,,\N{\ren}okay so let's talk a little bit about
-Dialogue: 0,0:30:30.05,0:30:33.92,ch,,0,0,0,,\N{\ren}the steps to build one of these think so\Nassuming that you have a proper Phil
-Dialogue: 0,0:30:33.92,0:30:35.26,ch,,0,0,0,,\N{\ren}method put together
-Dialogue: 0,0:30:35.26,0:30:38.96,ch,,0,0,0,,\N{\ren}one that sorta follows that recipe that\NI showed you I
-Dialogue: 0,0:30:38.96,0:30:42.77,ch,,0,0,0,,\N{\ren}this is sorta how we would put put these\Nthings in place so the first
-Dialogue: 0,0:30:42.77,0:30:45.78,ch,,0,0,0,,\N{\ren}the first level that I call it have a\Nworking recycler the layout
-Dialogue: 0,0:30:45.78,0:30:49.22,ch,,0,0,0,,\N{\ren}I'm is just to get the thing working\Nright so that there's a handful call
-Dialogue: 0,0:30:49.22,0:30:49.53,ch,,0,0,0,,\N{\ren}back
-Dialogue: 0,0:30:49.53,0:30:53.75,ch,,0,0,0,,\N{\ren}you need to to override and implement\Njust to get an actual layout manager
-Dialogue: 0,0:30:53.75,0:30:54.59,ch,,0,0,0,,\N{\ren}functioning
-Dialogue: 0,0:30:54.59,0:30:58.10,ch,,0,0,0,,\N{\ren}the first one is on layout children this\Nis the initial method
-Dialogue: 0,0:30:58.10,0:31:02.33,ch,,0,0,0,,\N{\ren}they will be called by the framework\Nanytime a significant layout change
-Dialogue: 0,0:31:02.33,0:31:03.90,ch,,0,0,0,,\N{\ren}happens to the recycler view
-Dialogue: 0,0:31:03.90,0:31:06.94,ch,,0,0,0,,\N{\ren}the recycler view will delegate to the\Nmanager that'd
-Dialogue: 0,0:31:06.94,0:31:11.49,ch,,0,0,0,,\N{\ren}it needs to do a new layout you only out\Nchildren this is not called repeatedly
-Dialogue: 0,0:31:11.49,0:31:15.60,ch,,0,0,0,,\N{\ren}meaning it's not called on every change\Nbut it'll be called for initial layout
-Dialogue: 0,0:31:15.60,0:31:18.85,ch,,0,0,0,,\N{\ren}will be called if the size are the\Nrecycler view changes if you ever call
-Dialogue: 0,0:31:18.85,0:31:21.83,ch,,0,0,0,,\N{\ren}request layout on the recycler view this\Nis what you're gonna see
-Dialogue: 0,0:31:21.83,0:31:25.49,ch,,0,0,0,,\N{\ren}and again if you have inappropriately\Nwritten Phil method all you have to do
-Dialogue: 0,0:31:25.49,0:31:29.84,ch,,0,0,0,,\N{\ren}in years running whether you have to use\Nin there already or whether it's empty
-Dialogue: 0,0:31:29.84,0:31:33.13,ch,,0,0,0,,\N{\ren}doesn't matter you just run your fell\Ninside a fear and be done
-Dialogue: 0,0:31:33.13,0:31:38.85,ch,,0,0,0,,\N{\ren}okay but we want to add a little bit\Nabuser act in there interactivity to
-Dialogue: 0,0:31:38.85,0:31:40.08,ch,,0,0,0,,\N{\ren}this function as well
-Dialogue: 0,0:31:40.08,0:31:44.65,ch,,0,0,0,,\N{\ren}I so you have to determine are you have\Nto report back to route the framework in
-Dialogue: 0,0:31:44.65,0:31:45.50,ch,,0,0,0,,\N{\ren}recycler view
-Dialogue: 0,0:31:45.50,0:31:50.11,ch,,0,0,0,,\N{\ren}which axis can this view scroll and\Ncannot scroll vertically
-Dialogue: 0,0:31:50.11,0:31:53.39,ch,,0,0,0,,\N{\ren}can scroll horizontally or in my case of
-Dialogue: 0,0:31:53.39,0:31:57.03,ch,,0,0,0,,\N{\ren}so in most of these cases you would only\Nreturn true
-Dialogue: 0,0:31:57.03,0:32:01.01,ch,,0,0,0,,\N{\ren}from one of these methods but the fix\Ngraydon implementation returns it for
-Dialogue: 0,0:32:01.01,0:32:03.99,ch,,0,0,0,,\N{\ren}both so that it can scroll both\Nhorizontally and vertically at the same
-Dialogue: 0,0:32:03.99,0:32:04.45,ch,,0,0,0,,\N{\ren}time
-Dialogue: 0,0:32:04.45,0:32:07.82,ch,,0,0,0,,\N{\ren}if you don't return trip from these\Nmethods then
-Dialogue: 0,0:32:07.82,0:32:12.22,ch,,0,0,0,,\N{\ren}the recycler view implementation simply\Nwon't delivery vans back to you
-Dialogue: 0,0:32:12.22,0:32:15.08,ch,,0,0,0,,\N{\ren}knowing that you're scrolling one\Ndirection the other basically locks
-Dialogue: 0,0:32:15.08,0:32:15.74,ch,,0,0,0,,\N{\ren}scrolling
+Dialogue: 0,0:29:39.38,0:29:43.26,ch,,0,0,0,,但你如果非要为这么干找一个原因的话,\N如果说你能够确定\N{\ren}but a little trick to help keep your sanity here is if you can be relatively sure
+Dialogue: 0,0:29:43.26,0:29:45.01,ch,,0,0,0,,孩子视图的索引\N{\ren}that the child indices are in the right
+Dialogue: 0,0:29:45.01,0:29:50.21,ch,,0,0,0,,一直是正常的话,这会帮你简化你一些检查的逻辑\N{\ren}order all the time then it it helps simplify some of that inspection logic
+Dialogue: 0,0:29:50.21,0:29:52.87,ch,,0,0,0,,这种检查是当你对视图做改变时有可能需要做的,等等\N{\ren}that you may need to do later on for changes and stuff like that
+Dialogue: 0,0:29:52.87,0:29:56.27,ch,,0,0,0,,因此,这里说的\N仅仅是遵从framework进行layout的一个好处\N{\ren}so just an advantage of using that implementation
+Dialogue: 0,0:29:56.27,0:30:01.52,ch,,0,0,0,,取决于你自定义布局的功能性和你对fill方法的改写\N{\ren}and this depending on your functionality and how you mutate that fill method I showed you
+Dialogue: 0,0:30:01.52,0:30:04.90,ch,,0,0,0,,你可以通过手动调用attach和detach\N{\ren}you can use attach and detach manually
+Dialogue: 0,0:30:04.90,0:30:09.53,ch,,0,0,0,,来对屏幕上的视图进行重新排序.\N如果你不准备将他们都丢给Scrap的话\N{\ren}to reorder these views so you know if\Nyou're not necessarily scrapping them
+Dialogue: 0,0:30:09.53,0:30:13.51,ch,,0,0,0,,但是,出于某种原因,你仅仅是想将视图进行重新排序的话\N{\ren}but for whatever reason you just want to\Nreorder them so that the same views have
+Dialogue: 0,0:30:13.51,0:30:15.28,ch,,0,0,0,,视图还是同样的视图,但是视图的索引却被重新排序的话\N{\ren}different indices that are in this order
+Dialogue: 0,0:30:15.28,0:30:18.49,ch,,0,0,0,,你要先把视图全detach掉,\N然后将视图以正确的顺序给attach回来\N{\ren}detach them all and reattach them in the right order that will
+Dialogue: 0,0:30:18.49,0:30:24.26,ch,,0,0,0,,这样才能使孩子视图有合适的视图索引\N{\ren}that will give them the proper view index from a child perspective inside of the parent view
+Dialogue: 0,0:30:28.56,0:30:30.05,ch,,0,0,0,,好了,咱接下来要讲一下\N{\ren}okay so let's talk a little bit about
+Dialogue: 0,0:30:30.05,0:30:35.26,ch,,0,0,0,,整个布局过程的步骤了.\N假设你现在已经写好了一个fill方法\N{\ren}the steps to build one of these things,so assuming that you have a proper method put together
+Dialogue: 0,0:30:35.26,0:30:38.96,ch,,0,0,0,,将我传授给你的秘诀都用上了.\N{\ren}one that sort of follows that recipe that I showed you.
+Dialogue: 0,0:30:38.96,0:30:42.77,ch,,0,0,0,,现在,我就传授你如何将前面讲过的东西串联在一起.\N{\ren}this is sort of how we would put these things in place,so the first
+Dialogue: 0,0:30:42.77,0:30:45.78,ch,,0,0,0,,我把使用recycler对视图进行布局的第一级别称为\N{\ren}the first level that I call it of working recycler view layout
+Dialogue: 0,0:30:45.78,0:30:49.53,ch,,0,0,0,,让布局管理器能工作起来.布局管理器有很多回调方法\N{\ren}is just to get the thing working,right.so that there's a handful call back
+Dialogue: 0,0:30:49.53,0:30:54.59,ch,,0,0,0,,需要你来进行重写和实现\N来使一个实际的布局管理器可以工作起来\N{\ren}you need to to override and implement just to get an actual layout manager functioning
+Dialogue: 0,0:30:54.59,0:30:58.10,ch,,0,0,0,,第一个要重写的方法就是onLayoutChildren,\N这是一个初始化的方法\N{\ren}the first one is on layout children this is the initial method
+Dialogue: 0,0:30:58.10,0:31:02.33,ch,,0,0,0,,这个方法会由framework调用,当任何一个特定的布局改变\N{\ren}they will be called by the framework anytime a significant layout change
+Dialogue: 0,0:31:02.33,0:31:03.90,ch,,0,0,0,,发生在RecyclerView身上时\N{\ren}happens to the recycler view
+Dialogue: 0,0:31:03.90,0:31:06.94,ch,,0,0,0,,RecyclerView就会把这个改变委托给布局管理器\N{\ren}the recycler view will delegate to the manager that
+Dialogue: 0,0:31:06.94,0:31:11.49,ch,,0,0,0,,告诉它,需要它通过onLayoutChildren进行一次新的布局,\N注意,onLayoutChildren并不会被重复调用\N{\ren}it needs to do a new layout through onLayoutChildren.this is not called repeatedly
+Dialogue: 0,0:31:11.49,0:31:15.60,ch,,0,0,0,,所以,其不会在每次布局改变时都被调用,而仅在初始化时\N{\ren}meaning it's not called on every change\Nbut it'll be called for initial layout
+Dialogue: 0,0:31:15.60,0:31:18.85,ch,,0,0,0,,还有当RecyclerView的大小被改变时也会调用\N{\ren}it will be called if the size of the recycler view changes if you ever call
+Dialogue: 0,0:31:18.85,0:31:21.83,ch,,0,0,0,,如果你有调用过RecyclerView.requestLayout的话,\N就会触发onLayoutChildren被调用\N{\ren}requestLayout on the recycler view this is what you're gonna see
+Dialogue: 0,0:31:21.83,0:31:25.49,ch,,0,0,0,,如果写的fill方法合格的话,在onLayoutChildren中,\N你要干的全部工作\N{\ren}and again if you haven't inappropriately written fill method all you have to do
+Dialogue: 0,0:31:25.49,0:31:29.84,ch,,0,0,0,,仅仅是运行fill而已.不管你在RecyclerView中\N是否已经存在了视图,或者其中视图为空\N{\ren}in here is to run it.whether you have views in there already or whether it's empty
+Dialogue: 0,0:31:29.84,0:31:33.13,ch,,0,0,0,,这都没关系,你仅仅在里面运行fill即可,就能把事情全搞定\N{\ren}doesn't matter you just run your fill inside of here and be done
+Dialogue: 0,0:31:33.13,0:31:40.08,ch,,0,0,0,,但是,我们还在这个方法中添加一些对用户操作的控制\N{\ren}okay,but we want to add a little bit of user act in there interactivity to this function as well
+Dialogue: 0,0:31:40.08,0:31:45.50,ch,,0,0,0,,所以,你必须在RecyclerView中来决定或者说是通知framework\N{\ren}so you have to determine or you have to report back to the framework in recycler view
+Dialogue: 0,0:31:45.50,0:31:50.11,ch,,0,0,0,,这个视图能在哪个坐标轴上进行滚动,是垂直轴呢?\N{\ren}which axis can this view scrolling,can it scroll vertically
+Dialogue: 0,0:31:50.11,0:31:53.39,ch,,0,0,0,,还是水平轴?或者在我的例子中,两者都行\N{\ren}can scroll horizontally or in my case,both
+Dialogue: 0,0:31:53.39,0:31:57.03,ch,,0,0,0,,多数情况下,你仅仅需要在这两个方法中\N{\ren}so in most of these cases you would only return true
+Dialogue: 0,0:31:57.03,0:32:01.01,ch,,0,0,0,,的一个里面返回true就行了.\N但是我们的固定网格实现两个方法中都返回了true\N{\ren}from one of these methods but the fix grid implementation returns it for
+Dialogue: 0,0:32:01.01,0:32:04.45,ch,,0,0,0,,这样它就能在水平方向和垂直方向同时滚动了.\N{\ren}both so that it can scroll both horizontally and vertically at the same time
+Dialogue: 0,0:32:04.45,0:32:07.82,ch,,0,0,0,,如果你没有从这两个方法中返回true\N{\ren}if you don't return true from these methods then
+Dialogue: 0,0:32:07.82,0:32:12.22,ch,,0,0,0,,那么RecyclerView的内部实现就简单地\N不把这个方向上事件分发给自己来处理\N{\ren}the recycler view implementation simply won't delivery events back to you
+Dialogue: 0,0:32:12.22,0:32:15.74,ch,,0,0,0,,\N{\ren}knowing that you're scrolling in one direction,the other basically locks scrolling
 Dialogue: 0,0:32:15.74,0:32:18.87,ch,,0,0,0,,\N{\ren}in that particular orientation but
-Dialogue: 0,0:32:18.87,0:32:22.87,ch,,0,0,0,,\N{\ren}the actual implementation of this\Ngrowing functionality happens in the
-Dialogue: 0,0:32:22.87,0:32:26.85,ch,,0,0,0,,\N{\ren}Skrillex by methods so scroll\Nhorizontally or vertically by
+Dialogue: 0,0:32:18.87,0:32:22.87,ch,,0,0,0,,\N{\ren}the actual implementation of this scrolling functionality happens in the
+Dialogue: 0,0:32:22.87,0:32:26.85,ch,,0,0,0,,\N{\ren}scroll x by methods so scroll\Nhorizontally or vertically by
 Dialogue: 0,0:32:26.85,0:32:31.86,ch,,0,0,0,,\N{\ren}these methods will be called repeatedly\Nvery similar to the scroll by method you
 Dialogue: 0,0:32:31.86,0:32:33.53,ch,,0,0,0,,\N{\ren}would see on a viewer view group
 Dialogue: 0,0:32:33.53,0:32:38.15,ch,,0,0,0,,\N{\ren}as user interaction is coming in so it\Nis the responsibility
