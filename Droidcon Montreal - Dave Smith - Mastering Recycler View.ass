@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 557
-Active Line: 572
+Scroll Position: 563
+Active Line: 576
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -598,17 +598,16 @@ Dialogue: 0,0:32:47.03,0:32:52.89,ch,,0,0,0,,因此这些方法在调用的时�
 Dialogue: 0,0:32:52.89,0:32:56.16,ch,,0,0,0,,从根本上来讲,这两个方法会循序渐进地被调用,\N每次被调用都会传递给你一个delta值\N{\ren}basically they'll give you a delta value and this is called incrementally
 Dialogue: 0,0:32:56.16,0:32:59.53,ch,,0,0,0,,这个值代表着framework所认为的,此时,\N你应当将你的视图平移多远\N{\ren}of how far the framework thinks you should shift your views
 Dialogue: 0,0:32:59.53,0:33:03.59,ch,,0,0,0,,当然,这得分横向平移和纵向平移\N{\ren}and of course in which direction horizontally or vertically,ok
-Dialogue: 0,0:33:03.59,0:33:05.96,ch,,0,0,0,,\N{\ren}and then it will be up to you to actually do
-Dialogue: 0,0:33:05.96,0:33:09.78,ch,,0,0,0,,\N{\ren}the movement as well as making any determinations about boundary conditions
-Dialogue: 0,0:33:09.78,0:33:14.57,ch,,0,0,0,,\N{\ren}rate the layout managers responsible for\Ntelling the framework when you hit the
-Dialogue: 0,0:33:14.57,0:33:17.21,ch,,0,0,0,,\N{\ren}end of the content any need to stop\Nscrolling
-Dialogue: 0,0:33:17.21,0:33:21.50,ch,,0,0,0,,\N{\ren}in that particular direction K now that\Nreport is actually done in the terms the
-Dialogue: 0,0:33:21.50,0:33:22.44,ch,,0,0,0,,\N{\ren}return value
-Dialogue: 0,0:33:22.44,0:33:26.47,ch,,0,0,0,,\N{\ren}so win whatever value you return from\Nthis function
-Dialogue: 0,0:33:26.47,0:33:29.74,ch,,0,0,0,,\N{\ren}designates to the framework how far you\Nactually traveled
-Dialogue: 0,0:33:29.74,0:33:32.94,ch,,0,0,0,,\N{\ren}and in the framework will make a\Ndetermination based on how much how far
-Dialogue: 0,0:33:32.94,0:33:34.14,ch,,0,0,0,,\N{\ren}it told you to travel
-Dialogue: 0,0:33:34.14,0:33:37.79,ch,,0,0,0,,\N{\ren}if there's a difference there it assumes\Nit's had a boundary and it's going to do
+Dialogue: 0,0:33:03.59,0:33:05.96,ch,,0,0,0,,接下来,这就需要你来对视图进行真正\N{\ren}and then it will be up to you to actually do
+Dialogue: 0,0:33:05.96,0:33:09.78,ch,,0,0,0,,的移动了,同时,你还要对移动过程中的边界条件做处理\N{\ren}the movement as well as making any determinations about boundary conditions
+Dialogue: 0,0:33:09.78,0:33:14.57,ch,,0,0,0,,布局管理器有义务去告诉framework,当视图滚到\N{\ren}right?the layout managers responsible for telling the framework when you hit the
+Dialogue: 0,0:33:14.57,0:33:17.21,ch,,0,0,0,,内容的结尾处时,应该停止滚动\N{\ren}end of the content and you need to stop scrolling
+Dialogue: 0,0:33:17.21,0:33:22.44,ch,,0,0,0,,在此当前方向.其实通知framework的报告就放在return值里\N{\ren}in that particular direction.oK now that report is actually done in the terms the return value
+Dialogue: 0,0:33:22.44,0:33:26.47,ch,,0,0,0,,从这个函数中返回的任何值\N{\ren}so when whatever value you return from this function
+Dialogue: 0,0:33:26.47,0:33:29.74,ch,,0,0,0,,都标明给framework,此时你实际上移动了多远的距离\N{\ren}designates to the framework how far you actually traveled
+Dialogue: 0,0:33:29.74,0:33:32.94,ch,,0,0,0,,接着,framework会根据其被告知移动的距离来做决定\N{\ren}and then the framework will make a determination based on how much how far
+Dialogue: 0,0:33:32.94,0:33:34.14,ch,,0,0,0,,(同上)\N{\ren}I told you to travel
+Dialogue: 0,0:33:34.14,0:33:37.79,ch,,0,0,0,,如果\N{\ren}if there's a difference there it assumes it's had a boundary and it's going to do
 Dialogue: 0,0:33:37.79,0:33:39.99,ch,,0,0,0,,\N{\ren}things for you like drawing edge close
 Dialogue: 0,0:33:39.99,0:33:44.24,ch,,0,0,0,,\N{\ren}and other edge effect behavior that you\Nprobably don't wanna see if you're not
 Dialogue: 0,0:33:44.24,0:33:47.44,ch,,0,0,0,,\N{\ren}all the way at the end yet to be very\Ncareful about how that return value
