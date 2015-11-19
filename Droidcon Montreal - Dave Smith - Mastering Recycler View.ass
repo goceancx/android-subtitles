@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 577
-Active Line: 585
+Scroll Position: 576
+Active Line: 590
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -612,13 +612,13 @@ Dialogue: 0,0:33:37.08,0:33:39.99,ch,,0,0,0,,framework就会为你做一些事�
 Dialogue: 0,0:33:39.99,0:33:44.24,ch,,0,0,0,,还有像其他的边缘效果,你肯定不想看到你的布局管理器\N{\ren}and other edge effect behavior that you probably don't wanna see if you're not
 Dialogue: 0,0:33:44.24,0:33:47.44,ch,,0,0,0,,没有这种边缘效果,\N因此你必须要对return值是如何来的十分关心\N{\ren}all the way at the end,so you have to be very careful about how that return value
 Dialogue: 0,0:33:47.44,0:33:48.36,ch,,0,0,0,,(同上)\N{\ren}actually comes up
-Dialogue: 0,0:33:48.36,0:33:51.47,ch,,0,0,0,,这是一种\N{\ren}so this is kind of an example
-Dialogue: 0,0:33:51.47,0:33:56.88,ch,,0,0,0,,你可能见到的示例.这是在FiexedGrid中为水平滚动\N{\ren}of what you might see.this is a snippet version of what's in fixed grid for scroll horizontally
-Dialogue: 0,0:33:56.88,0:33:59.90,ch,,0,0,0,,\N{\ren}so you're given a value that they call\Nin this case Deacs
-Dialogue: 0,0:33:59.90,0:34:03.69,ch,,0,0,0,,\N{\ren}thats how far they think you should\Nscroll first thing you have to determine
-Dialogue: 0,0:34:03.69,0:34:06.98,ch,,0,0,0,,\N{\ren}perhaps based on which direction that's\Ngrowing occurs is
-Dialogue: 0,0:34:06.98,0:34:10.25,ch,,0,0,0,,\N{\ren}can I scroll that far or have I hit a\Nboundary
-Dialogue: 0,0:34:10.25,0:34:13.98,ch,,0,0,0,,\N{\ren}and determine how far you're actually\Ngoing to shift now the nice thing is
+Dialogue: 0,0:33:48.36,0:33:51.47,ch,,0,0,0,,这就是scrollXby方法的示例\N{\ren}so this is kind of an example
+Dialogue: 0,0:33:51.47,0:33:56.88,ch,,0,0,0,,这是一段在FiexedGrid中的代码片段\N{\ren}of what you might see.this is a snippet version of what's in fixed grid for scroll horizontally
+Dialogue: 0,0:33:56.88,0:33:59.90,ch,,0,0,0,,首先你被传入一个称为dx的值\N{\ren}so you're given a value that they call in this case dx
+Dialogue: 0,0:33:59.90,0:34:03.69,ch,,0,0,0,,这个值就是framework认为的你应当滚动的值.首先,\N{\ren}thats how far they think you should scroll.first thing you have to determine
+Dialogue: 0,0:34:03.69,0:34:06.98,ch,,0,0,0,,你可能要根据此次滚动发生的方向来决定\N{\ren}perhaps based on which direction that scrolling occurs is.
+Dialogue: 0,0:34:06.98,0:34:10.25,ch,,0,0,0,,我能否滚动这么远,我有没有碰到边界\N{\ren}can I scroll that far or have I hit boundary
+Dialogue: 0,0:34:10.25,0:34:13.98,ch,,0,0,0,,最后才来决定此视图实际要平移的距离.\N{\ren}and determine how far you're actually going to shift.now the nice thing is
 Dialogue: 0,0:34:13.98,0:34:17.58,ch,,0,0,0,,\N{\ren}you don't have to iterate over the child\Nabuse in individually move them
 Dialogue: 0,0:34:17.58,0:34:22.29,ch,,0,0,0,,\N{\ren}recycler be layout manager provides of\Nthese offset children methods both
 Dialogue: 0,0:34:22.29,0:34:23.70,ch,,0,0,0,,\N{\ren}horizontal and vertical
