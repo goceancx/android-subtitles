@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 576
-Active Line: 590
+Scroll Position: 616
+Active Line: 622
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -618,45 +618,39 @@ Dialogue: 0,0:33:56.88,0:33:59.90,ch,,0,0,0,,首先你被传入一个称为dx的
 Dialogue: 0,0:33:59.90,0:34:03.69,ch,,0,0,0,,这个值就是framework认为的你应当滚动的值.首先,\N{\ren}thats how far they think you should scroll.first thing you have to determine
 Dialogue: 0,0:34:03.69,0:34:06.98,ch,,0,0,0,,你可能要根据此次滚动发生的方向来决定\N{\ren}perhaps based on which direction that scrolling occurs is.
 Dialogue: 0,0:34:06.98,0:34:10.25,ch,,0,0,0,,我能否滚动这么远,我有没有碰到边界\N{\ren}can I scroll that far or have I hit boundary
-Dialogue: 0,0:34:10.25,0:34:13.98,ch,,0,0,0,,最后才来决定此视图实际要平移的距离.\N{\ren}and determine how far you're actually going to shift.now the nice thing is
-Dialogue: 0,0:34:13.98,0:34:17.58,ch,,0,0,0,,\N{\ren}you don't have to iterate over the child\Nabuse in individually move them
-Dialogue: 0,0:34:17.58,0:34:22.29,ch,,0,0,0,,\N{\ren}recycler be layout manager provides of\Nthese offset children methods both
-Dialogue: 0,0:34:22.29,0:34:23.70,ch,,0,0,0,,\N{\ren}horizontal and vertical
-Dialogue: 0,0:34:23.70,0:34:28.15,ch,,0,0,0,,\N{\ren}that will do the the work I've shifting\Nall views that are currently attached
-Dialogue: 0,0:34:28.15,0:34:31.25,ch,,0,0,0,,\N{\ren}so all you have to determine is the\Nactual difference
-Dialogue: 0,0:34:31.25,0:34:35.63,ch,,0,0,0,,\N{\ren}and then just passed that into the\Nmethod but because recycler view doesn't
-Dialogue: 0,0:34:35.63,0:34:37.28,ch,,0,0,0,,\N{\ren}really know how your layout looks
-Dialogue: 0,0:34:37.28,0:34:41.76,ch,,0,0,0,,\N{\ren}once the views have been moved you may\Nhave created a gap so it's up to you
-Dialogue: 0,0:34:41.76,0:34:46.50,ch,,0,0,0,,\N{\ren}to go back and run another Phil K now in\Nmy implementation and you can look at
-Dialogue: 0,0:34:46.50,0:34:47.24,ch,,0,0,0,,\N{\ren}the details
-Dialogue: 0,0:34:47.24,0:34:51.22,ch,,0,0,0,,\N{\ren}in the example and get her but in my\Nimplementation I actually provided
-Dialogue: 0,0:34:51.22,0:34:56.01,ch,,0,0,0,,\N{\ren}direction keyword back to the Phil just\Nto help sort of assessed when I needed
-Dialogue: 0,0:34:56.01,0:34:57.10,ch,,0,0,0,,\N{\ren}to shift my
-Dialogue: 0,0:34:57.10,0:35:00.88,ch,,0,0,0,,\N{\ren}my positions backwards or forward based\Non which way this rowing was going on
-Dialogue: 0,0:35:00.88,0:35:04.78,ch,,0,0,0,,\N{\ren}that's not really required in the\Ntechnique that I'm describing it just
-Dialogue: 0,0:35:04.78,0:35:08.13,ch,,0,0,0,,\N{\ren}it was helpful for my bi directional\Nscrolling on
-Dialogue: 0,0:35:08.13,0:35:11.86,ch,,0,0,0,,\N{\ren}but it it's not really part A its\Nwhatever your algorithm needs
-Dialogue: 0,0:35:11.86,0:35:16.74,ch,,0,0,0,,\N{\ren}a you know to be able to do that in the\Nmost efficient way
-Dialogue: 0,0:35:16.74,0:35:19.96,ch,,0,0,0,,\N{\ren}okay and then as I mention the return\Nvalue their
-Dialogue: 0,0:35:19.96,0:35:23.85,ch,,0,0,0,,\N{\ren}has to be the difference up what was\Nactually scrolled
-Dialogue: 0,0:35:23.85,0:35:27.79,ch,,0,0,0,,\N{\ren}if you just take this a new dish return\NDeacs you'll never end up scrolling
-Dialogue: 0,0:35:27.79,0:35:31.50,ch,,0,0,0,,\N{\ren}and if you always return 0 never scroll\Nat all anytime you try to scroll you'll
-Dialogue: 0,0:35:31.50,0:35:33.39,ch,,0,0,0,,\N{\ren}just get infinity edge close all the\Ntime
-Dialogue: 0,0:35:33.39,0:35:37.52,ch,,0,0,0,,\N{\ren}okay so you have to be very specific\Nabout when you can and when you can't
-Dialogue: 0,0:35:37.52,0:35:38.06,ch,,0,0,0,,\N{\ren}move
-Dialogue: 0,0:35:38.06,0:35:41.16,ch,,0,0,0,,\N{\ren}based on whether or not you've hit a\Nboundary of your content
-Dialogue: 0,0:35:41.16,0:35:45.57,ch,,0,0,0,,\N{\ren}okay at a minimum
-Dialogue: 0,0:35:45.57,0:35:49.71,ch,,0,0,0,,\N{\ren}that's it that's all you really need to\Nimplement to get a working
-Dialogue: 0,0:35:49.71,0:35:53.77,ch,,0,0,0,,\N{\ren}layout managers something that will lay\Nviews out you can move them around
-Dialogue: 0,0:35:53.77,0:35:57.06,ch,,0,0,0,,\N{\ren}you know all the things you would expect\Nfrom user interaction perspective
-Dialogue: 0,0:35:57.06,0:36:00.35,ch,,0,0,0,,\N{\ren}other additional features you can add\Nand probably should add
-Dialogue: 0,0:36:00.35,0:36:04.24,ch,,0,0,0,,\N{\ren}overtime but thats or to the basics like\Neven get that far you can at least
-Dialogue: 0,0:36:04.24,0:36:07.61,ch,,0,0,0,,\N{\ren}determine if your other than works in\Nyour layout functionalities okay and all
-Dialogue: 0,0:36:07.61,0:36:09.22,ch,,0,0,0,,\N{\ren}that sort of thing I
-Dialogue: 0,0:36:09.22,0:36:12.32,ch,,0,0,0,,\N{\ren}the next step if you have additional\Ntime is
-Dialogue: 0,0:36:12.32,0:36:15.39,ch,,0,0,0,,\N{\ren}typically to start reacting to dataset\Nchanges
-Dialogue: 0,0:36:15.39,0:36:19.04,ch,,0,0,0,,\N{\ren}cannes is really not a whole lot of work\Nto do here most ovett is built right and
-Dialogue: 0,0:36:19.04,0:36:19.39,ch,,0,0,0,,\N{\ren}but
+Dialogue: 0,0:34:10.25,0:34:13.98,ch,,0,0,0,,最后才来决定实际要平移的距离.这里有个好处是,\N{\ren}and determine how far you're actually going to shift.now the nice thing is
+Dialogue: 0,0:34:13.98,0:34:17.58,ch,,0,0,0,,你不必对孩子视图们进行迭代,然后对其进行单独的移动\N{\ren}you don't have to iterate over the child views and individually move them
+Dialogue: 0,0:34:17.58,0:34:23.70,ch,,0,0,0,,RecyclerView的LayoutManager\N为我们提供水平和垂直平移的帮助方法\N{\ren}recycler view layout manager provides of these offset children methods both horizontal and vertical
+Dialogue: 0,0:34:23.70,0:34:28.15,ch,,0,0,0,,来帮我们对当前attached的所有视图进行平移转换\N{\ren}that will do the the work of shifting all views that are currently attached
+Dialogue: 0,0:34:28.15,0:34:31.25,ch,,0,0,0,,因此,你只需要计算好偏移量就行了\N{\ren}so all you have to determine is the actual difference
+Dialogue: 0,0:34:31.25,0:34:35.63,ch,,0,0,0,,然后把这个偏移量传递给帮助方法即可.不过,由于RecyclerView\N{\ren}and then just passed that into the method but because recycler view doesn't
+Dialogue: 0,0:34:35.63,0:34:37.28,ch,,0,0,0,,对其孩子视图的布局是一无所知的,\N{\ren}really know how your layout looks
+Dialogue: 0,0:34:37.28,0:34:41.76,ch,,0,0,0,,一旦当前attach的视图被移动了,就可能生成Gap,因此这就需要\N{\ren}once the views have been moved you may have created a gap so it's up to you
+Dialogue: 0,0:34:41.76,0:34:47.24,ch,,0,0,0,,那么处理gap方法是?再运行一次现成的fill方法即可.\N在我的例子里\N{\ren}to go back and run another fill(),oK now in my implementation and you can look at the details
+Dialogue: 0,0:34:47.24,0:34:51.22,ch,,0,0,0,,(你可以去github看),我的实现实际上为fill提供了\N{\ren}in the example on github.but in my implementation I actually provided
+Dialogue: 0,0:34:51.22,0:34:57.10,ch,,0,0,0,,额外的direction参数,以此来辅助\N{\ren}direction keyword back to the fill,just to help sort of assist when I needed to shift my
+Dialogue: 0,0:34:57.10,0:35:00.88,ch,,0,0,0,,我对positions的前移或后移,\N到底是前移还是后移这要看当前视图的滚动状态\N{\ren}my positions backwards or forward based on which way this scrolling was going on
+Dialogue: 0,0:35:00.88,0:35:04.78,ch,,0,0,0,,这里的direction并不是我所描述的fill技巧所必需的,\N{\ren}that's not really required in the technique that I'm describing it just
+Dialogue: 0,0:35:04.78,0:35:08.13,ch,,0,0,0,,这仅仅是方便我的视图二维滚动而已\N{\ren}it was helpful for my bidirectional scrolling
+Dialogue: 0,0:35:08.13,0:35:11.86,ch,,0,0,0,,你也可以根据你的fill算法,来传入你所需的额外参数\N{\ren}but it it's not really part of,its whatever your algorithm needs
+Dialogue: 0,0:35:11.86,0:35:16.74,ch,,0,0,0,,以便你能让你的算法效率最高\N{\ren}you know to be able to do that in the most efficient way
+Dialogue: 0,0:35:16.74,0:35:19.96,ch,,0,0,0,,这里的返回值\N{\ren}okay and then as I mention the return value their
+Dialogue: 0,0:35:19.96,0:35:23.85,ch,,0,0,0,,必须是你实际滚动值的负值\N{\ren}has to be the difference of what was actually scrolled
+Dialogue: 0,0:35:23.85,0:35:27.79,ch,,0,0,0,,如果你直接返回dx,那么视图的滚动就不会被停止\N{\ren}if you just take this and you just return dx you'll never end up scrolling
+Dialogue: 0,0:35:27.79,0:35:31.50,ch,,0,0,0,,而如果你老是返回0,那么任何时候你尝试去滚动时,\N视图都不会被滚动\N{\ren}and if you always return 0 never scroll at all anytime you try to scroll you'll
+Dialogue: 0,0:35:31.50,0:35:33.39,ch,,0,0,0,,你会老是看到边缘被拉起而产生的发光效果\N{\ren}just get infinity edge glows all the time
+Dialogue: 0,0:35:33.39,0:35:38.06,ch,,0,0,0,,因此,你必须得详细的在代码中体现出你何时能移动,何时不能\N{\ren}okay so you have to be very specific about when you can and when you can't move
+Dialogue: 0,0:35:38.06,0:35:41.16,ch,,0,0,0,,这取决于你是否滚动到了你的列表内容的边界\N{\ren}based on whether or not you've hit a boundary of your content
+Dialogue: 0,0:35:44.40,0:35:45.57,ch,,0,0,0,,在最低程度上,\N{\ren}at a minimum
+Dialogue: 0,0:35:45.57,0:35:49.71,ch,,0,0,0,,这就行了.这些就是你要干的全部事情了,\N这些能保证你获取到一个能工作得起来的\N{\ren}that's it.that's all you really need to implement to get a working
+Dialogue: 0,0:35:49.71,0:35:53.77,ch,,0,0,0,,布局管理器了.它能帮你把视图布局出来,\N还能让你对视图进行移动\N{\ren}layout managers something that will lay views out you can move them around
+Dialogue: 0,0:35:53.77,0:35:57.06,ch,,0,0,0,,从用户交互的视角来看,所有你能期望得到的,它都能帮你满足\N{\ren}you know all the things you would expect from user interaction perspective
+Dialogue: 0,0:35:57.06,0:36:00.35,ch,,0,0,0,,尽管我们还有一些额外的特性可以加进来,\N这些特性也是之后我们应该加的\N{\ren}other additional features you can add and probably should add
+Dialogue: 0,0:36:00.35,0:36:04.24,ch,,0,0,0,,但是,我刚讲的是基础.就算你只做到最低程度,那么你起码可以\N{\ren}overtime but thats sort of the basics,like even get that far you can at least
+Dialogue: 0,0:36:04.24,0:36:09.22,ch,,0,0,0,,来检验出你的算法是否能工作以及你的布局功能是否管用等等\N{\ren}determine if your algorithm works and your layout functionalities are okay and all that sort of thing I
+Dialogue: 0,0:36:09.22,0:36:12.32,ch,,0,0,0,,干完基本的事情之后呢,如果你还有额外的时间的话\N{\ren}the next step if you have additional time is
+Dialogue: 0,0:36:12.32,0:36:15.39,ch,,0,0,0,,通常地,我们还需要让布局管理器能对数据集变化做响应\N{\ren}typically to start reacting to dataset changes
+Dialogue: 0,0:36:15.39,0:36:19.39,ch,,0,0,0,,实际上,在这里,我们并不会\N{\ren}there're really not a whole lot of work to do here.most of it is built right in but
 Dialogue: 0,0:36:19.39,0:36:22.94,ch,,0,0,0,,\N{\ren}there is one additional method here\Ncalled on adapter changed
 Dialogue: 0,0:36:22.94,0:36:25.95,ch,,0,0,0,,\N{\ren}that you can provide some optimizations\Ninsider
 Dialogue: 0,0:36:25.95,0:36:30.45,ch,,0,0,0,,\N{\ren}you don't have to override this but it\Ncan be helpful this will be triggered
