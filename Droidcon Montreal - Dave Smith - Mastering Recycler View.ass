@@ -13,8 +13,8 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Scroll Position: 616
-Active Line: 622
+Scroll Position: 641
+Active Line: 653
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -650,41 +650,38 @@ Dialogue: 0,0:36:00.35,0:36:04.24,ch,,0,0,0,,但是,我刚讲的是基础.就算
 Dialogue: 0,0:36:04.24,0:36:09.22,ch,,0,0,0,,来检验出你的算法是否能工作以及你的布局功能是否管用等等\N{\ren}determine if your algorithm works and your layout functionalities are okay and all that sort of thing I
 Dialogue: 0,0:36:09.22,0:36:12.32,ch,,0,0,0,,干完基本的事情之后呢,如果你还有额外的时间的话\N{\ren}the next step if you have additional time is
 Dialogue: 0,0:36:12.32,0:36:15.39,ch,,0,0,0,,通常地,我们还需要让布局管理器能对数据集变化做响应\N{\ren}typically to start reacting to dataset changes
-Dialogue: 0,0:36:15.39,0:36:19.39,ch,,0,0,0,,实际上,在这里,我们并不会\N{\ren}there're really not a whole lot of work to do here.most of it is built right in but
-Dialogue: 0,0:36:19.39,0:36:22.94,ch,,0,0,0,,\N{\ren}there is one additional method here\Ncalled on adapter changed
-Dialogue: 0,0:36:22.94,0:36:25.95,ch,,0,0,0,,\N{\ren}that you can provide some optimizations\Ninsider
-Dialogue: 0,0:36:25.95,0:36:30.45,ch,,0,0,0,,\N{\ren}you don't have to override this but it\Ncan be helpful this will be triggered
-Dialogue: 0,0:36:30.45,0:36:34.65,ch,,0,0,0,,\N{\ren}if the recycler view ever is provided\Nwith a completely different
-Dialogue: 0,0:36:34.65,0:36:38.92,ch,,0,0,0,,\N{\ren}adapter instance so if their call if\Nthey call said adapter again with some
-Dialogue: 0,0:36:38.92,0:36:42.45,ch,,0,0,0,,\N{\ren}other object in this will be called in\Nthe layout manager
-Dialogue: 0,0:36:42.45,0:36:45.51,ch,,0,0,0,,\N{\ren}and you can use that for as an\Noptimization opportunity
-Dialogue: 0,0:36:45.51,0:36:49.92,ch,,0,0,0,,\N{\ren}to simply clear all the views no notice\NI'm not tossing them to the recycler
-Dialogue: 0,0:36:49.92,0:36:53.70,ch,,0,0,0,,\N{\ren}I just want them removed completely the\Nassumption here is that
-Dialogue: 0,0:36:53.70,0:36:57.64,ch,,0,0,0,,\N{\ren}if we're getting a completely new\Nadapter it's definitely new data
-Dialogue: 0,0:36:57.64,0:37:00.97,ch,,0,0,0,,\N{\ren}and it's probably going to be in your\Nview types as well so there's no need
-Dialogue: 0,0:37:00.97,0:37:04.14,ch,,0,0,0,,\N{\ren}for me to dump everything I have into\Nthe recycler cuz this is going to end up
-Dialogue: 0,0:37:04.14,0:37:06.06,ch,,0,0,0,,\N{\ren}having a toss those away later anyway
-Dialogue: 0,0:37:06.06,0:37:10.72,ch,,0,0,0,,\N{\ren}not that we would break if it did that\Nbut we can optimize that out
-Dialogue: 0,0:37:10.72,0:37:13.99,ch,,0,0,0,,\N{\ren}by saying if the adapter changes just\Nremove everything
-Dialogue: 0,0:37:13.99,0:37:18.74,ch,,0,0,0,,\N{\ren}bypass the Recycle don't like two\Nhundred dollars K
-Dialogue: 0,0:37:18.74,0:37:21.88,ch,,0,0,0,,\N{\ren}now we all know notified is a change in\Nan adapter right
-Dialogue: 0,0:37:21.88,0:37:25.92,ch,,0,0,0,,\N{\ren}if if something has changed in the data\Nwe trigger this method to update the
-Dialogue: 0,0:37:25.92,0:37:26.26,ch,,0,0,0,,\N{\ren}view
-Dialogue: 0,0:37:26.26,0:37:29.84,ch,,0,0,0,,\N{\ren}right was that way in listview still\Nexists in recycler view
-Dialogue: 0,0:37:29.84,0:37:34.47,ch,,0,0,0,,\N{\ren}at a at a base implementation you don't\Nhave to do anything different here
-Dialogue: 0,0:37:34.47,0:37:38.37,ch,,0,0,0,,\N{\ren}are notified is a change just triggers a\Nnew layout change
-Dialogue: 0,0:37:38.37,0:37:41.90,ch,,0,0,0,,\N{\ren}and if your fill a game is set up\Nappropriately uydess relay out
-Dialogue: 0,0:37:41.90,0:37:46.91,ch,,0,0,0,,\N{\ren}right the only thing you might want to\Npersist in this is sorted implementation
-Dialogue: 0,0:37:46.91,0:37:47.90,ch,,0,0,0,,\N{\ren}dependent is
-Dialogue: 0,0:37:47.90,0:37:52.35,ch,,0,0,0,,\N{\ren}for a at for an adapter change you might\Nwanna persist with the current first
-Dialogue: 0,0:37:52.35,0:37:53.35,ch,,0,0,0,,\N{\ren}position was
-Dialogue: 0,0:37:53.35,0:37:58.01,ch,,0,0,0,,\N{\ren}so you may want to discover that before\Nyou run your fill but again depending on
-Dialogue: 0,0:37:58.01,0:38:00.78,ch,,0,0,0,,\N{\ren}how you've written your fill you're\Nprobably already doing that anyway
-Dialogue: 0,0:38:00.78,0:38:05.18,ch,,0,0,0,,\N{\ren}so they can attempt with the new data to\Nlay out from the same first visible
-Dialogue: 0,0:38:05.18,0:38:05.96,ch,,0,0,0,,\N{\ren}position
-Dialogue: 0,0:38:05.96,0:38:10.81,ch,,0,0,0,,\N{\ren}okay but if you if you toss those away\Nalready or something like that you may
-Dialogue: 0,0:38:10.81,0:38:12.54,ch,,0,0,0,,\N{\ren}want to track that value
-Dialogue: 0,0:38:12.54,0:38:15.90,ch,,0,0,0,,\N{\ren}just very briefly until the new layout\Ncomes around or something like that
+Dialogue: 0,0:36:15.39,0:36:19.39,ch,,0,0,0,,实际上,这里我们的工作量并没有很多,\N大多数的工作framework都内置实现了\N{\ren}there're really not a whole lot of work to do here.most of it is built right in but
+Dialogue: 0,0:36:19.39,0:36:22.94,ch,,0,0,0,,但是有个一方法叫做onAdapterChanged\N{\ren}there is one additional method here called on adapter changed
+Dialogue: 0,0:36:22.94,0:36:25.95,ch,,0,0,0,,你可以在里面做一些优化的工作\N{\ren}that you can provide some optimizations inside of
+Dialogue: 0,0:36:25.95,0:36:30.45,ch,,0,0,0,,其实你不必非要重写这个方法,但是重写会有更多的益处.\N这方法被触发时机是\N{\ren}you don't have to override this but it can be helpful.this will be triggered
+Dialogue: 0,0:36:30.45,0:36:34.65,ch,,0,0,0,,当RecyclerView被提供一个完全不同的Adapter的时候\N{\ren}if the recycler view ever is provided with a completely different
+Dialogue: 0,0:36:34.65,0:36:38.92,ch,,0,0,0,,因此,当某人再次调用setAdapter且传入的数据集不同时,\N{\ren}adapter instance so if they call said adapter again with some
+Dialogue: 0,0:36:38.92,0:36:42.45,ch,,0,0,0,,onAdapterChanged就会在LayoutManager里面被调用\N{\ren}other object,then this will be called in the layout manager
+Dialogue: 0,0:36:42.45,0:36:45.51,ch,,0,0,0,,此时,你就可以利用这个调用,来进行一些优化操作\N{\ren}and you can use that as an optimization opportunity
+Dialogue: 0,0:36:45.51,0:36:49.92,ch,,0,0,0,,做法很简单,就是把当前的视图全清空.\N要注意,我并不是把视图丢给recycler\N{\ren}to simply clear all the views,now notice I'm not tossing them to the recycler
+Dialogue: 0,0:36:49.92,0:36:53.70,ch,,0,0,0,,而是想把视图给全部移除掉.这样做是根据下面的假设\N{\ren}I just want them removed completely.the assumption here is that
+Dialogue: 0,0:36:53.70,0:36:57.64,ch,,0,0,0,,如果设置了一个完全不同的adapter,\N那么我们的数据集肯定也完全不同了\N{\ren}if we're getting a completely new adapter it's definitely new data
+Dialogue: 0,0:36:57.64,0:37:00.97,ch,,0,0,0,,还有视图类型也可能会是新的,因此这里并不需要\N{\ren}and it's probably gonna be new view types as well,so there's no need
+Dialogue: 0,0:37:00.97,0:37:04.14,ch,,0,0,0,,我来把所有视图都丢给recycler,因为就算丢给recycler,\N{\ren}for me to dump everything I have into the recycler,coz this just going to end up
+Dialogue: 0,0:37:04.14,0:37:06.06,ch,,0,0,0,,它之后也会将这个视图给进行清空的\N{\ren}having a toss those away later anyway
+Dialogue: 0,0:37:06.06,0:37:10.72,ch,,0,0,0,,并不是说如果不干这件事,就会引起崩溃.\N而是说我们可以在这儿做优化\N{\ren}it's not that we would break if it did that but we can optimize that out
+Dialogue: 0,0:37:10.72,0:37:13.99,ch,,0,0,0,,一旦发现adapter有改变,就把所有视图给移除\N{\ren}by saying if the adapter changes,just remove everything
+Dialogue: 0,0:37:13.99,0:37:16.66,城之内,,0,0,0,,{\an8}注:(humorous) A phrase telling someone to pursue a path directly without deviations."
+Dialogue: 0,0:37:13.99,0:37:16.66,ch,,0,0,0,,不用再传给recycler了,这样就会显得太死搬硬套了\N{\ren}by pass the recycler,don't collect two hundred dollars.
+Dialogue: 0,0:37:18.74,0:37:21.88,ch,,0,0,0,,我们都知道在Adapter中的notifyDataSetChanged方法\N{\ren}now we all know notify dataset change on an adapter,right
+Dialogue: 0,0:37:21.88,0:37:26.26,ch,,0,0,0,,如果adapter中的数据改变了,我们就出发这个方法来更新界面\N{\ren}if something has changed in the data we trigger this method to update the view
+Dialogue: 0,0:37:26.26,0:37:29.84,ch,,0,0,0,,在ListView中是这么干的,在RecyclerView也仍然存在\N{\ren}right it was that way in listview still exists in recycler view
+Dialogue: 0,0:37:29.84,0:37:34.47,ch,,0,0,0,,如果是做一个基础的实现的话,你并不需要干其他工作\N{\ren}at a base implementation you don't have to do anything different here
+Dialogue: 0,0:37:34.47,0:37:38.37,ch,,0,0,0,,RecyclerView中的notifyDatasetChanged\N仅会触发一个新的布局改变\N{\ren}notify dataset change just triggers a new layout change
+Dialogue: 0,0:37:38.37,0:37:41.90,ch,,0,0,0,,此时,再一次,如果你的fill方法写得好的话,\N你就啥也不用干,等着布局管理器帮你重新布局即可\N{\ren}and if your fill again is set up appropriately you just relayout
+Dialogue: 0,0:37:41.90,0:37:47.90,ch,,0,0,0,,依赖这种实现方式,你可能唯一想干的事儿是\N{\ren}right the only thing you might want to persist in this sort of implementation dependent is
+Dialogue: 0,0:37:47.90,0:37:53.35,ch,,0,0,0,,对于adapter的改变,你可能想让第一个可见视图的position持续存在\N{\ren}for an adapter change you might wanna persist with the current first position was
+Dialogue: 0,0:37:53.35,0:37:58.01,ch,,0,0,0,,因此在你运行fill之前,你可能需要先找到这个位置.不过,再一次,\N{\ren}so you may want to discover that before you run your fill.but again depending on
+Dialogue: 0,0:37:58.01,0:38:00.78,ch,,0,0,0,,取决于你对fill的实现,你可能在fill里面已做过找位置这事了\N{\ren}how you've written your fill you're probably already doing that anyway
+Dialogue: 0,0:38:00.78,0:38:05.96,ch,,0,0,0,,因此,布局管理器兴许就能尝试着对新数据进行布局\N且其开始布局的位置会跟之前一样\N{\ren}so they can attempt with the new data to lay out from the same first visible position
+Dialogue: 0,0:38:05.96,0:38:10.42,ch,,0,0,0,,但是,如果你有视图被丢弃过的话,或其他类似的事情有发生的话,\N{\ren}okay but if you toss those away already or something like that
+Dialogue: 0,0:38:10.44,0:38:12.54,ch,,0,0,0,,那么你可能就需要对这个位置值做追踪\N{\ren}you may want to track that value
+Dialogue: 0,0:38:12.54,0:38:15.90,ch,,0,0,0,,\N{\ren}just very briefly until the new layout comes around or something like that
 Dialogue: 0,0:38:15.90,0:38:18.90,ch,,0,0,0,,\N{\ren}otherwise you could just lay it out from\Nthe beginning it would still work
 Dialogue: 0,0:38:18.90,0:38:24.50,ch,,0,0,0,,\N{\ren}the one a caveat to this is that if your\Nadapter has stable ladies
 Dialogue: 0,0:38:24.50,0:38:28.76,ch,,0,0,0,,\N{\ren}I recycler view assumes at that point\Nthat it actually has enough data to
