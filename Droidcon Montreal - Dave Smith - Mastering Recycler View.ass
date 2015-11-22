@@ -13,7 +13,7 @@ PlayResY: 1080
 Last Style Storage: Default
 Audio File: Droidcon Montreal - Dave Smith - Mastering Recycler View.mp4
 Video Zoom Percent: 0.250000
-Active Line: 923
+Active Line: 1
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -27,28 +27,27 @@ Style: 海马,Kaiti TC,30,&H00FFFFFF,&H00FEFEFF,&H00060607,&H00000000,0,0,0,0,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:09.42,城之内,,0,0,0,,{\an8}中英字幕by:Ocean-藏心(微博)    推荐指数:★★★★☆\N简介: 深入剖析了RecyclerView中最核心的布局管理器部分,\N也捎带讲解了RecyclerView的其他机制,看完之后,你会真正明白为何ListView要被废弃.
+Dialogue: 0,0:00:00.00,0:00:04.61,ch,,0,0,0,,精通RecyclerView布局\N{\ren}Mastering RecyclerView Layouts
 Dialogue: 0,0:00:04.61,0:00:06.33,ch,,0,0,0,,你好,他好,大家好\N{\ren}hello hello everyone
 Dialogue: 0,0:00:06.33,0:00:10.28,ch,,0,0,0,,进来,坐好,我要开始讲了.下午好\N{\ren}come sit stay awhile good afternoon
-Dialogue: 0,0:00:10.28,0:00:14.20,ch,,0,0,0,,今天大家过的如何?噢,大家的答案我喜欢听\N{\ren}how's everyone today the that's what I\Nlike to hear
-Dialogue: 0,0:00:14.20,0:00:18.81,ch,,0,0,0,,我叫大卫-史密斯,我是NewCircle培训中心的Android老大\N{\ren}I hello everyone my name is Dave Smith I\Nam the Android lead for new circle
-Dialogue: 0,0:00:18.81,0:00:19.37,ch,,0,0,0,,我叫大卫-史密斯,我是NewCircle培训中心的Android老大\N{\ren}training
-Dialogue: 0,0:00:19.37,0:00:22.61,ch,,0,0,0,,我们对很多技术做开源的培训,Android只是其中一项\N{\ren}we do open Source Training a number of\Ntechnologies and reduce happens to be
-Dialogue: 0,0:00:22.61,0:00:23.35,ch,,0,0,0,,我们对很多技术做开源的培训,Android只是其中一项\N{\ren}one of them
-Dialogue: 0,0:00:23.35,0:00:26.77,ch,,0,0,0,,不过言归正传,今天我要谈的主题是\N{\ren}I'm gonna be here to you today to talk\Nabout
-Dialogue: 0,0:00:26.77,0:00:31.26,ch,,0,0,0,,精通RecyclerView的布局.\n我们的关注点不在于如何具体的\N{\ren}mastering recycler view layouts I we're\Nnot gonna talk more specifically about
+Dialogue: 0,0:00:10.28,0:00:14.20,ch,,0,0,0,,今天大家过的如何?噢,大家的答案我喜欢听\N{\ren}how's everyone today the that's what I like to hear
+Dialogue: 0,0:00:14.20,0:00:19.37,ch,,0,0,0,,我叫大卫-史密斯,我是NewCircle培训中心的Android老大\N{\ren}I hello everyone my name is Dave Smith I am the Android lead for new circle training
+Dialogue: 0,0:00:19.37,0:00:23.35,ch,,0,0,0,,我们对很多技术做开源的培训,Android只是其中一项\N{\ren}we do open Source Training a number of technologies and reduce happens to be one of them
+Dialogue: 0,0:00:23.35,0:00:26.77,ch,,0,0,0,,不过言归正传,今天我要谈的主题是\N{\ren}I'm gonna be here to you today to talk about
+Dialogue: 0,0:00:26.77,0:00:31.26,ch,,0,0,0,,精通RecyclerView的布局.\n我们的关注点不在于如何具体的\N{\ren}mastering recycler view layouts I we're not gonna talk more specifically about
 Dialogue: 0,0:00:31.26,0:00:33.19,ch,,0,0,0,,具体的使用RecyclerView\N{\ren}how to use recycler view
-Dialogue: 0,0:00:33.19,0:00:38.09,ch,,0,0,0,,而在于如何\N{\ren}in the generals a sense today we're going\Nto be talking mostly about building
+Dialogue: 0,0:00:33.19,0:00:38.09,ch,,0,0,0,,而在于如何\N{\ren}in the generals a sense today we're going to be talking mostly about building
 Dialogue: 0,0:00:38.09,0:00:40.59,ch,,0,0,0,,自定义RecyclerView的布局管理器\N{\ren}custom layout managers with recyclerView
-Dialogue: 0,0:00:40.59,0:00:43.61,ch,,0,0,0,,以及我们在自定义布局管理器过程中\n应该注意的事情\N{\ren}and how we can kind of get through that\Nprocess so
-Dialogue: 0,0:00:43.61,0:00:46.99,ch,,0,0,0,,先给大家说说我站在这儿的原因\N{\ren}a little bit about why I'm here standing\Nin front of you today
+Dialogue: 0,0:00:40.59,0:00:43.61,ch,,0,0,0,,以及我们在自定义布局管理器过程中\n应该注意的事情\N{\ren}and how we can kind of get through that process so
+Dialogue: 0,0:00:43.61,0:00:46.99,ch,,0,0,0,,先给大家说说我站在这儿的原因\N{\ren}a little bit about why I'm here standing in front of you today
 Dialogue: 0,0:00:46.99,0:00:50.01,ch,,0,0,0,,正所谓前人栽树,后人乘凉嘛\N{\ren}call it a bit of (Hannah) a humanitarian\Neffort
 Dialogue: 0,0:00:50.01,0:00:54.52,ch,,0,0,0,,我会给你介绍你可能需要到的工具(指API的帮助类)\N{\ren}I'm really here to give you the tools\Nhopefully that you will need
 Dialogue: 0,0:00:54.52,0:00:58.48,ch,,0,0,0,,当你尝试使用RecyclerView时,当你为了特定的需求\N{\ren}if you are trying to use recycler view\Nyou're trying to customize it for your
 Dialogue: 0,0:00:58.48,0:00:59.79,ch,,0,0,0,,而去自定义RecyclerView时将有所帮助\N{\ren}specific purposes
 Dialogue: 0,0:00:59.79,0:01:03.60,ch,,0,0,0,,我会尽力带你把这整个过程走通\N{\ren}and trying to get you through that\Nprocess with out losing
 Dialogue: 0,0:01:03.60,0:01:07.32,ch,,0,0,0,,来让你少走弯路\N{\ren}you know essentially losing your mind\NI'm so
-Dialogue: 0,0:01:07.32,0:01:11.04,ch,,0,0,0,,在我们深入讲解之前,我想确保大家是不是都在一个级别上\N{\ren}before we dive too deep into the details\NI just wanna make sure that everybody's
-Dialogue: 0,0:01:11.04,0:01:12.53,ch,,0,0,0,,在我们深入讲解之前,我想确保大家是不是都在一个级别上\N{\ren}on the same page so
+Dialogue: 0,0:01:07.32,0:01:12.53,ch,,0,0,0,,在我们深入讲解之前,我想确保大家是不是都在一个级别上\N{\ren}before we dive too deep into the details\NI just wanna make sure that everybody's on the same page so
 Dialogue: 0,0:01:12.53,0:01:16.18,ch,,0,0,0,,那么大家所看到的这种情况是从哪儿来的呢\N{\ren}where does this all this come from you\Nknow the
 Dialogue: 0,0:01:16.18,0:01:20.77,ch,,0,0,0,,众所周知,视图回收的这种主意是一种惯用的技术,\N{\ren}this idea of view recycling is a\Npattern that's used in mobile all over
 Dialogue: 0,0:01:20.77,0:01:22.72,ch,,0,0,0,,其被用于所有的移动平台\N{\ren}the place all mobile platforms do this
@@ -116,15 +115,12 @@ Dialogue: 0,0:04:46.40,0:04:49.66,ch,,0,0,0,,尽管它还有些其他的特性,�
 Dialogue: 0,0:04:49.66,0:04:53.72,ch,,0,0,0,,一个列表项均分的单一列表.LinearLayoutManager有个\N{\ren}uniform single list of items.one of the\Nneat features
 Dialogue: 0,0:04:53.72,0:04:57.18,ch,,0,0,0,,ListView没有的特性.那就是对方向参数的可选性\N{\ren}of linear layout manager that we\Ndidn't have in listview is the optional
 Dialogue: 0,0:04:57.18,0:04:58.50,ch,,0,0,0,,那就是对方向参数的可选性\N{\ren}orientation setup
-Dialogue: 0,0:04:58.50,0:05:02.75,ch,,0,0,0,,因此LinearLayoutManager允许RecyclerView创建\N{\ren}so LinearLayout Manager allows recycler\Nview to create a list of items that
-Dialogue: 0,0:05:02.75,0:05:03.63,ch,,0,0,0,,可滚动的列表\N{\ren}scrolls
+Dialogue: 0,0:04:58.50,0:05:03.63,ch,,0,0,0,,因此LinearLayoutManager允许RecyclerView创建可滚动的列表\N{\ren}so LinearLayout Manager allows recycler\Nview to create a list of items that scrolls
 Dialogue: 0,0:05:03.63,0:05:08.47,ch,,0,0,0,,不管是垂直的还是水平的.很明显,我们之前\N{\ren}either vertically or horizontally which\Nis a new feature that we obviously
 Dialogue: 0,0:05:08.47,0:05:09.76,ch,,0,0,0,,是没有这个特性的.\N{\ren}didn't have before
 Dialogue: 0,0:05:09.76,0:05:12.77,ch,,0,0,0,,你只需要在LinearLayoutManager实例化的时候\N{\ren}and this is controlled during the\Ninstantiation of the LinearLayout
-Dialogue: 0,0:05:12.77,0:05:17.08,ch,,0,0,0,,指定水平或者垂直的方向参数即可\N{\ren}manager just by giving it that vertical\Nor horizontal orientation qualifier
-Dialogue: 0,0:05:17.08,0:05:17.49,ch,,0,0,0,,\N{\ren}there
-Dialogue: 0,0:05:17.49,0:05:21.69,ch,,0,0,0,,这里最后一个boolean型的参数,代表是你是否要逆序进行\N{\ren}OK. the boolean parameter that at the end\Nthat allows you to also reverse the
-Dialogue: 0,0:05:21.69,0:05:22.28,ch,,0,0,0,,布局\N{\ren}layout
+Dialogue: 0,0:05:12.77,0:05:17.49,ch,,0,0,0,,指定水平或者垂直的方向参数即可\N{\ren}manager just by giving it that vertical\Nor horizontal orientation qualifier there
+Dialogue: 0,0:05:17.49,0:05:22.28,ch,,0,0,0,,这里最后一个boolean型的参数,代表是你是否要逆序进行布局\N{\ren}OK. the boolean parameter that at the end that allows you to also reverse the layout
 Dialogue: 0,0:05:22.28,0:05:25.60,ch,,0,0,0,,通常,大家都是把它设为false\N{\ren}so the traditional by setting it to\Nfalse would
 Dialogue: 0,0:05:25.60,0:05:29.00,ch,,0,0,0,,那么列表项显示的顺序跟适配器中getView()顺序是一致的\N{\ren}order the items as they viewed in the\Nadapter so
 Dialogue: 0,0:05:29.00,0:05:32.15,ch,,0,0,0,,从位置0开始,由高到低依次依序显示列表项\N{\ren}adapter item position $0 upfront down to\Nthe end
@@ -133,8 +129,7 @@ Dialogue: 0,0:05:35.72,0:05:39.13,ch,,0,0,0,,列表中最后一项会先显示.�
 Dialogue: 0,0:05:39.13,0:05:39.80,ch,,0,0,0,,在LinearLayoutManager中也存在\N{\ren}there as well
 Dialogue: 0,0:05:43.08,0:05:46.22,ch,,0,0,0,,接下来,framework提供给我们的是GridLayoutManager\N{\ren}the next one that we have appears the\Ngrid layout manager
 Dialogue: 0,0:05:46.22,0:05:51.03,ch,,0,0,0,,这个布局管理器在L预览版中是没有的,但是其功能性\N{\ren}so this is...this one was not in the\Npreview but functionality have it is
-Dialogue: 0,0:05:51.03,0:05:55.50,ch,,0,0,0,,我们却不陌生.因为我们都知道GridView\N{\ren}still pretty intuitive to most of us because\Nwe've either seen or used gridview
-Dialogue: 0,0:05:55.50,0:05:56.16,ch,,0,0,0,,\N{\ren}before
+Dialogue: 0,0:05:51.03,0:05:56.16,ch,,0,0,0,,我们却不陌生.因为我们都知道GridView\N{\ren}still pretty intuitive to most of us because\Nwe've either seen or used gridview before
 Dialogue: 0,0:05:56.16,0:05:59.21,ch,,0,0,0,,当然,这里的布局管理器更加灵活一点.它的特点是,\N{\ren}at a little bit more flexible than that\Nbut the idea here is that
 Dialogue: 0,0:05:59.21,0:06:02.47,ch,,0,0,0,,大体上,我们仍有着均分的网格布局列表项集合\N{\ren}we're still having this uniform\Ncollection of items
 Dialogue: 0,0:06:02.47,0:06:06.56,ch,,0,0,0,,但是这些列表项,现在可以一个挨着一个填满一行后,\N{\ren}but these items can now be stacked up\Nuh you know, either side by side on
@@ -175,8 +170,7 @@ Dialogue: 0,0:08:03.70,0:08:05.80,ch,,0,0,0,,你必须提前定义好在你的�
 Dialogue: 0,0:08:05.80,0:08:09.89,ch,,0,0,0,,然后,你可以用LookUp来决定\N{\ren}in this layout and then you can use the\Nlookup to basically tell it how many of
 Dialogue: 0,0:08:09.89,0:08:11.93,ch,,0,0,0,,(在桌子上占用的单元数)\N{\ren}those you think of them as the cells in a\Ntable
 Dialogue: 0,0:08:11.93,0:08:16.44,ch,,0,0,0,,这个特定的item所应该占用的单元数\N{\ren}this specific item should take up at I
-Dialogue: 0,0:08:16.44,0:08:20.01,ch,,0,0,0,,关于GridLayoutManager还有件事你不能忘\N{\ren}it one of the important things to\Nrealize with grid layout though is that
-Dialogue: 0,0:08:20.01,0:08:20.49,ch,,0,0,0,,\N{\ren}the
+Dialogue: 0,0:08:16.44,0:08:20.49,ch,,0,0,0,,关于GridLayoutManager还有件事你不能忘\N{\ren}it one of the important things to\Nrealize with grid layout though is that the
 Dialogue: 0,0:08:20.49,0:08:23.52,ch,,0,0,0,,不论其使用何种的方向.其表项的高度\N{\ren}whatever orientation it's in,the item\Nheight:
 Dialogue: 0,0:08:23.52,0:08:27.93,ch,,0,0,0,,亦或其表项的宽度(水平方向),在每个表项\N{\ren}or for towards on all the item with\Nstill needs to be uniform for
 Dialogue: 0,0:08:27.93,0:08:31.24,ch,,0,0,0,,所占的块中必须是均等的.在我们这个例子中,\N{\ren}each element block so for instance in\Nthis example
@@ -213,8 +207,7 @@ Dialogue: 0,0:10:19.31,0:10:23.20,ch,,0,0,0,,一个二维的可滚动的布局,�
 Dialogue: 0,0:10:23.20,0:10:26.93,ch,,0,0,0,,网格里的元素会一个挨着一个的布局出来,其中元素的位置\N{\ren}OK so the grid is going to be laid out\Nthe positions would basically be the way
 Dialogue: 0,0:10:26.93,0:10:28.19,ch,,0,0,0,,就是你在屏幕上所看到的\N{\ren}you see them up there whether
 Dialogue: 0,0:10:28.19,0:10:31.79,ch,,0,0,0,,元素的顺序是从左到右,网格的宽度是固定的\N{\ren}they order themselves left to right the\Ngrid with is fixed
-Dialogue: 0,0:10:31.79,0:10:35.06,ch,,0,0,0,,因此元素按列数被包裹起来,按行从上往下排\N{\ren}so the number of columns they just wrap around\Nto the next and I'll just line
-Dialogue: 0,0:10:35.06,0:10:35.76,ch,,0,0,0,,因此元素按列数被包裹起来,按行从上往下排\N{\ren}themselves up
+Dialogue: 0,0:10:31.79,0:10:35.76,ch,,0,0,0,,因此元素按列数被包裹起来,按行从上往下排\N{\ren}so the number of columns they just wrap around\Nto the next and I'll just line themselves up
 Dialogue: 0,0:10:35.76,0:10:40.04,ch,,0,0,0,,这就好像我正在看一个电视预告或者是体育赛事比分\N{\ren}like if I was looking at maybe a TV\Nschedule or sports scores in a grid
 Dialogue: 0,0:10:40.04,0:10:40.97,ch,,0,0,0,,或者其他诸如此类的东西\N{\ren}something like that
 Dialogue: 0,0:10:40.97,0:10:44.88,ch,,0,0,0,,用户可以随意的上滑下滑左滑右滑斜着划\N{\ren}then the user could simply pan and\Nscroll around
@@ -280,8 +273,7 @@ Dialogue: 0,0:14:08.15,0:14:11.09,ch,,0,0,0,,另一方面,你还要把废弃视�
 Dialogue: 0,0:14:11.09,0:14:13.06,ch,,0,0,0,,recycler里面竟有两种级别的机制\N{\ren}a two-level mechanism inside
 Dialogue: 0,0:14:13.06,0:14:17.28,ch,,0,0,0,,来干这两件事情.recycler中有个叫废料堆的概念\N{\ren}to make this work the recycler has this\Nconcept of what they call the scrap heap
 Dialogue: 0,0:14:17.28,0:14:21.52,ch,,0,0,0,,它底层还有个叫回收池的东西\N{\ren}and then underneath that is this idea of\Nthe recycle poor
-Dialogue: 0,0:14:21.52,0:14:25.91,ch,,0,0,0,,这两者之间的差别是很微小的.在多数情况下\N{\ren}now the the difference between them is\Nfairly nuanced and in a lot cases it
-Dialogue: 0,0:14:25.91,0:14:26.29,ch,,0,0,0,,其影响\N{\ren}doesn't
+Dialogue: 0,0:14:21.52,0:14:26.29,ch,,0,0,0,,这两者之间的差别是很微小的.在多数情况下其影响\N{\ren}now the the difference between them is\Nfairly nuanced and in a lot cases it doesn't
 Dialogue: 0,0:14:26.29,0:14:30.05,ch,,0,0,0,,可以忽略不计.不过,如果你致力于获取最佳性能时\N{\ren}really matter but there are some\Noptimizations that can be made if you
 Dialogue: 0,0:14:30.05,0:14:31.33,ch,,0,0,0,,了解这种微小差别就很有必要了\N{\ren}understand the difference
 Dialogue: 0,0:14:31.33,0:14:35.88,ch,,0,0,0,,这里的ScrapHeap就像是第一道防线,\N{\ren}the the scrap heap is usually the the\Nfirst line of defense where you would
@@ -850,8 +842,8 @@ Dialogue: 0,0:48:15.55,0:48:19.17,ch,,0,0,0,,然后它们会在其新位置上�
 Dialogue: 0,0:48:19.17,0:48:22.40,ch,,0,0,0,,这就是因为RecyclerView对视图的动画形式是一无所知的\N{\ren}and that's because the recycler view doesn't know any better
 Dialogue: 0,0:48:22.40,0:48:25.68,ch,,0,0,0,,它只知道在preLayout之后,这些视图就不在原来位置上了\N{\ren}it just knows that after pre layout they weren't there anymore
 Dialogue: 0,0:48:25.68,0:48:29.18,ch,,0,0,0,,当我对视图滚动时,\N我能看到这些视图实际上还存在于RecyclerView中\N{\ren}and then when I scroll over to see where they actually are
-Dialogue: 0,0:48:29.18,0:48:34.01,ch,,0,0,0,,它们会在新的layout中出现.如何来修正这个问题呢,\N我们要通过添加对predictive动画支持的属性\N{\ren}they'll show up there in the new layout.ok by adding proper predictive animation support 
-Dialogue: 0,0:48:34.01,0:48:39.02,ch,,0,0,0,,这样我才能修改其默认的动画行为,\N在我的例子中也是通过这种方法来实现的\N{\ren}I can modify that behavior and again this is the way the example actually works if you go run it 
+Dialogue: 0,0:48:29.18,0:48:34.01,ch,,0,0,0,,它们会在新的layout中出现.如何来修正这个问题呢,\N我们要通过添加对predictive动画支持的属性\N{\ren}they'll show up there in the new layout.ok by adding proper predictive animation support
+Dialogue: 0,0:48:34.01,0:48:39.02,ch,,0,0,0,,这样我才能修改其默认的动画行为,\N在我的例子中也是通过这种方法来实现的\N{\ren}I can modify that behavior and again this is the way the example actually works if you go run it
 Dialogue: 0,0:48:39.02,0:48:42.99,ch,,0,0,0,,我可以改变其行为,这样以来,这些绿的视图就会\N{\ren}I can modify their behaviors so that those green views
 Dialogue: 0,0:48:42.99,0:48:47.36,ch,,0,0,0,,沿着既定的方向滑出屏幕到其应该所处的位置上\N{\ren}slide off screen to where they're supposed to go into that direction.
 Dialogue: 0,0:48:47.36,0:48:50.33,ch,,0,0,0,,在用户的屏幕上,我们可能只能看到这些视图\N{\ren}now from the user screen they'll probably just slide
@@ -877,7 +869,7 @@ Dialogue: 0,0:49:59.08,0:50:03.27,ch,,0,0,0,,都是这种间断区间的grid,你
 Dialogue: 0,0:50:03.27,0:50:07.04,ch,,0,0,0,,仅仅是整体布局的一个子集,以及这些视图的位置\N{\ren}is actually just a subset of the overall layout but the views that are in between
 Dialogue: 0,0:50:07.04,0:50:09.10,ch,,0,0,0,,处于是区间中间\N{\ren}are actually in the middle of the range
 Dialogue: 0,0:50:09.10,0:50:11.18,ch,,0,0,0,,如果是这种非线性的一维的布局的话\N{\ren}which you wouldn't typically have with the linear
-Dialogue: 0,0:50:11.24,0:50:13.46,ch,,0,0,0,,那么你可能就需要去读一读我系列里的最后一篇文章了\N{\ren}you might want to read the last blog post 
+Dialogue: 0,0:50:11.24,0:50:13.46,ch,,0,0,0,,那么你可能就需要去读一读我系列里的最后一篇文章了\N{\ren}you might want to read the last blog post
 Dialogue: 0,0:50:13.50,0:50:16.71,ch,,0,0,0,,我称这篇文章为Redux篇,我在其中讨论的一些\N{\ren}that I call the redux where I actually discuss some other bugs and
 Dialogue: 0,0:50:16.71,0:50:21.70,ch,,0,0,0,,Layout Manager API的bugs,\N这些bug为这种布局管理器的实现又增加了难度\N{\ren}issues with the layout manager API that actually makes that implementation much more difficult than it should be
 Dialogue: 0,0:50:21.70,0:50:24.22,ch,,0,0,0,,以及其他一些为解决bug而要求你所做的事情.\N{\ren}and some other things you have to do to work around that.
@@ -939,9 +931,9 @@ Dialogue: 0,0:54:06.96,0:54:10.06,ch,,0,0,0,,我认为大多数情况下你的�
 Dialogue: 0,0:54:10.10,0:54:11.48,ch,,0,0,0,,你不必去追踪任何东西\N{\ren}you shouldn't have to track anything
 Dialogue: 0,0:54:11.48,0:54:13.58,ch,,0,0,0,,如果你要需要在每个列表项上都保存一个状态时\N{\ren}and if you do it as per item
 Dialogue: 0,0:54:13.58,0:54:15.04,ch,,0,0,0,,你应该将其保存在ViewHolder中\N{\ren}stick in the view holder
-Dialogue: 0,0:54:18.12,0:54:19.48,ch,,0,0,0,,我觉得我们还能再提问一个问题\N{\ren}one more question I think we have time for 
+Dialogue: 0,0:54:18.12,0:54:19.48,ch,,0,0,0,,我觉得我们还能再提问一个问题\N{\ren}one more question I think we have time for
 Dialogue: 0,0:54:34.80,0:54:36.98,ch,,0,0,0,,噢,你是在说像飞划这种手势么\N{\ren}oh you mean like for fling behavior
-Dialogue: 0,0:54:37.02,0:54:39.06,ch,,0,0,0,,onFling什么的并不在布局管理器中\N{\ren}it's not really exposed 
+Dialogue: 0,0:54:37.02,0:54:39.06,ch,,0,0,0,,onFling什么的并不在布局管理器中\N{\ren}it's not really exposed
 Dialogue: 0,0:54:39.12,0:54:41.46,ch,,0,0,0,,因此如果你要去对Fling什么的做自定制的话\N{\ren}so if you were to do it you would have to override the
 Dialogue: 0,0:54:41.46,0:54:43.71,ch,,0,0,0,,你就要该去重写RecyclerView的方法了\N{\ren}recycler view itself as well
 Dialogue: 0,0:54:43.71,0:54:47.96,ch,,0,0,0,,以及对API进行一些修改.我并没有去这么做过\N{\ren}and kinda modify the API a little bit so I haven't really looked doing it
@@ -950,4 +942,4 @@ Dialogue: 0,0:54:52.09,0:54:54.51,ch,,0,0,0,,这个行为是在内部处理的,�
 Dialogue: 0,0:54:54.51,0:54:57.53,ch,,0,0,0,,Fling行为整个动画,而Fling内部的行为并不能由用户直接控制\N{\ren}is the animation part of that that's not user directed
 Dialogue: 0,0:54:59.70,0:55:01.94,ch,,0,0,0,,好了,谢谢大家,如果大家还有任何问题\N{\ren}alright,well thanks your time,guys.if you have any other questions,
 Dialogue: 0,0:55:01.98,0:55:04.06,ch,,0,0,0,,等我站在台下后,我们可以一起再探讨.\N{\ren}i will step off the side here,we can address on that
-Dialogue: 0,0:55:04.06,0:55:18.82,ch,,0,0,0,,
+Dialogue: 0,0:55:04.06,0:55:18.82,ch,,0,0,0,,各位可以鼓掌了
