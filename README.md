@@ -1,8 +1,10 @@
 
-![Enhancing Android UI with Custom Views](/images/Enhancing Android UI with Custom Views.png)
+![Enhancing Android UI with Custom Views](http://github.com/oceancx/android-subtitles/raw/master/images/Enhancing Android UI with Custom Views.png)
 
-![Mastering RecyclerView Layouts](/images/Mastering RecyclerView Layouts.png)
+![Mastering RecyclerView Layouts](http://github.com/oceancx/android-subtitles/raw/master/images/Mastering RecyclerView Layouts.png)
 
-![Mastering the Android Touch System](/images/Mastering the Android Touch System.png)
+![Mastering the Android Touch System](http://github.com/oceancx/android-subtitles/raw/master/images/Mastering the Android Touch System.png)
 
-![The world of ListView](/images/The world of ListView.png)
+![The world of ListView](http://github.com/oceancx/android-subtitles/raw/master/images/The world of ListView.png)
+
+
