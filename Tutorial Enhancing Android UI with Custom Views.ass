@@ -5,29 +5,29 @@ Title: Default Aegisub file
 ScriptType: v4.00+
 WrapStyle: 0
 ScaledBorderAndShadow: yes
-YCbCr Matrix: None
-PlayResX: 0
-PlayResY: 0
+YCbCr Matrix: TV.601
+PlayResX: 1280
+PlayResY: 720
 
 [Aegisub Project Garbage]
 Export Encoding: Unicode (UTF-8)
 Last Style Storage: Default
-Audio File: Tutorial Enhancing Android UI with Custom Views.mp4
-Scroll Position: 141
-Active Line: 155
+Audio File: ../../../Volumes/Mac/翻译集合/翻译过的视频/Tutorial Enhancing Android UI with Custom Views.mp4
+Video Zoom Percent: 0.500000
+Active Line: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: 城之内,Weibei SC,16,&H00FFFFFF,&H00FEFEFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0.8,0.3,2,10,10,10,134
-Style: 游戏,Hiragino Sans GB,18,&H00FFFFFF,&H00FEFEFF,&H00040100,&H00000000,0,0,0,0,100,100,0,0,1,0.7,0.2,2,10,10,12,1
+Style: 城之内,Weibei SC,30,&H00FFFFFF,&H00FEFEFF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0.8,0.3,2,10,10,10,134
+Style: 游戏,Hiragino Sans GB,30,&H00FFFFFF,&H00FEFEFF,&H00040100,&H00000000,0,0,0,0,100,100,0,0,1,0.7,0.2,2,10,10,12,1
 Style: 十代,Songti SC,16,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0.2,2,10,10,10,1
 Style: 海马,Kaiti TC,16,&H00FFFFFF,&H00FEFEFF,&H00060607,&H00000000,0,0,0,0,100,100,0,0,1,1,0.2,2,10,10,10,134
+Style: ch,Heiti SC,70,&H00FFFFFF,&H00FBFBFF,&H00AD9000,&H00000000,0,0,0,0,100,100,0,0,1,1.5,0.45,2,15,15,15,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.02,0:00:03.17,游戏,,0,0,0,,[Android自定义视图专辑]\N翻译:    @Ocean-藏心(求粉)
-Dialogue: 0,0:00:03.17,0:00:06.37,游戏,,0,0,0,,简介:\N短小精悍,12分钟讲通了自定义视图的方方面面
-Dialogue: 0,0:00:06.40,0:00:09.44,游戏,,0,0,0,,安卓UI教程-自定义视图\NTutorial Enhancing Android UI with Custom Views
+Dialogue: 0,0:00:00.00,0:00:08.74,城之内,,0,0,0,,{\an8}中英字幕by:Ocean-藏心(微博)    推荐指数:★★★★\N简介: 视频短小精悍,12分钟讲通了自定义视图的方方面面
+Dialogue: 0,0:00:02.00,0:00:04.00,ch,,0,0,0,,用自定义视图来增强AndroidUI{\r游戏}\NEnhancing Android UI with Custom Views
 Dialogue: 0,0:00:09.48,0:00:11.20,游戏,,0,0,0,,我是大卫 史密斯\NHello,I am David Smith
 Dialogue: 0,0:00:11.24,0:00:13.42,游戏,,0,0,0,,我是一个Android开发的头头,在Double Encore这家公司\NAn Android dev lead on  Double Encore
 Dialogue: 0,0:00:13.48,0:00:15.42,游戏,,0,0,0,,还是在NewCircle的Android讲师\Nand an Android Instructor here at NewCircle

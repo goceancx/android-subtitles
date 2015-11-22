@@ -15,8 +15,6 @@ Audio File: Mastering the Android Touch System.mp4
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 1.000000
-Scroll Position: 1633
-Active Line: 1635
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
@@ -30,8 +28,8 @@ Style: ch,Heiti SC,50,&H00FFFFFF,&H00FBFBFF,&H00AD9000,&H00000000,0,0,0,0,100,10
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:09.16,城之内,,0,0,0,,{\an8}翻译:@Ocean-藏心  推荐:★★★★☆\N\N简介:略有枯燥,但内容清晰,很有广度深度
 Dialogue: 0,0:00:00.00,0:00:05.34,ch,,0,0,0,,精通Android触摸系统\N{\ren}Mastering the Android Touch System
-Dialogue: 0,0:00:05.37,0:00:09.65,ch,,0,0,0,,翻译:@Ocean-藏心  推荐:★★★★☆\N\N简介:略有枯燥,但内容清晰,很有广度深度
 Dialogue: 0,0:00:09.65,0:00:11.65,ch,,0,0,0,,欢迎大家\N{\ren}So welcome everyone
 Dialogue: 0,0:00:11.65,0:00:13.65,ch,,0,0,0,,饭吃饱了吧\N{\ren}welcome back from lunch
 Dialogue: 0,0:00:13.68,0:00:14.54,ch,,0,0,0,,吃饱后就要跟我来搬砖了\N{\ren}i hope it was delicious
