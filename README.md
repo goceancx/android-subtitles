@@ -1,4 +1,4 @@
-这个库主要是个人对android开发视频的一些翻译,欢迎广大基友进行Pull Request和Issue.欢迎转载,但请注明出处.
+这个库主要是个人对android开发视频的一些翻译,欢迎广大基友进行Pull Request和Issue.欢迎转载,但请注明出处.[全部字幕视频云盘](http://yun.baidu.com/s/1dDqd6Id)
 
 ![Enhancing Android UI with Custom Views](EAUWCV.png)
 
@@ -14,6 +14,6 @@
 
 ![Mastering RecyclerView Layouts](MRL.png)
 
-[离线视频](http://pan.baidu.com/s/1dDHNPT3)  [源码](https://github.com/devunwired)
+[优酷](http://v.youku.com/v_show/id_XMTM5MzQ3ODE0NA==.html?f=23088492) [离线视频](http://pan.baidu.com/s/1dDHNPT3)  [源码](https://github.com/devunwired)
 
 
