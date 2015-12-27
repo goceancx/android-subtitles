@@ -1,5 +1,6 @@
 这个库主要是个人对android开发视频的一些翻译,欢迎广大基友进行Pull Request和Issue.欢迎转载,但请注明出处.[全部字幕视频云盘](http://yun.baidu.com/s/1dDqd6Id)
 
+关于如何做字幕,参考本人[博客](http://blog.oceancx.com/2015/12/26/%E5%A6%82%E4%BD%95%E5%81%9A%E5%AD%97%E5%B9%95/).
 
 <img src="https://github.com/oceancx/android-subtitles/blob/master/images/EAUWCV.png" width="50%" height="50%">
 
